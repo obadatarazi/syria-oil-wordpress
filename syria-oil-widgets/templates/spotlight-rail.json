@@ -1,0 +1,18 @@
+{
+  "version": "0.4",
+  "title": "Syria Oil — Spotlight Rail",
+  "type": "widget",
+  "content": [
+    {
+      "id": "sowPresetSpot",
+      "elType": "widget",
+      "widgetType": "syria_oil_spotlight_rail",
+      "settings": {
+        "layout": "spotlight",
+        "source": "query",
+        "heading": "تغطيات مميزة",
+        "query_posts_per_page": 3
+      }
+    }
+  ]
+}

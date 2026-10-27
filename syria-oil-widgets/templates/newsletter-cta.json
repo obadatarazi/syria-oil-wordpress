@@ -1,0 +1,18 @@
+{
+  "version": "0.4",
+  "title": "Syria Oil — Newsletter CTA",
+  "type": "widget",
+  "content": [
+    {
+      "id": "sowPresetNl",
+      "elType": "widget",
+      "widgetType": "syria_oil_newsletter_cta",
+      "settings": {
+        "mode": "buttons",
+        "title": "ابقَ على اطلاع",
+        "text": "آخر أخبار النفط والغاز.",
+        "primary_text": "اشترك"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": "0.4",
+  "title": "Syria Oil — Article Card Grid",
+  "type": "widget",
+  "content": [
+    {
+      "id": "sowPresetGrid",
+      "elType": "widget",
+      "widgetType": "syria_oil_article_card_grid",
+      "settings": {
+        "show_header": "yes",
+        "heading": "أحدث الأخبار",
+        "query_posts_per_page": 6
+      }
+    }
+  ]
+}

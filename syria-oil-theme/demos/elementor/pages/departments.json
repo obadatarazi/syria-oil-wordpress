@@ -1,0 +1,121 @@
+{
+  "version": "0.4",
+  "title": "الإدارات",
+  "type": "page",
+  "content": [
+    {
+      "id": "0c3ceb2",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "cda4716",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "2b0bb14",
+              "elType": "widget",
+              "widgetType": "syria_oil_page_hero",
+              "settings": {
+                "title": "الإدارات",
+                "subtitle": "الهيكل الإداري للوزارة واختصاصات المديريات.",
+                "show_breadcrumb": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "892157d",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "570b7a8",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "202cdbe",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"grid-3\"><a class=\"service-tile reveal\" href=\"#\"><div class=\"service-icon\">01</div><h3>الاستكشاف</h3><p>المسوحات الزلزالية والمربعات والبيانات الجيولوجية</p></a><a class=\"service-tile reveal\" href=\"#\"><div class=\"service-icon\">02</div><h3>الإنتاج</h3><p>تشغيل الحقول وخطط التطوير وزيادة الاستخلاص</p></a><a class=\"service-tile reveal\" href=\"#\"><div class=\"service-icon\">03</div><h3>الغاز الطبيعي</h3><p>المعالجة والنقل والتوزيع والاستثمار الغازي</p></a><a class=\"service-tile reveal\" href=\"#\"><div class=\"service-icon\">04</div><h3>شؤون النفط</h3><p>السياسات النفطية والتنسيق مع الشركات</p></a><a class=\"service-tile reveal\" href=\"#\"><div class=\"service-icon\">05</div><h3>التراخيص</h3><p>إصدار وتجديد التراخيص والتصاريح</p></a><a class=\"service-tile reveal\" href=\"#\"><div class=\"service-icon\">06</div><h3>البيئة</h3><p>الامتثال البيئي ودراسات الأثر</p></a><a class=\"service-tile reveal\" href=\"#\"><div class=\"service-icon\">07</div><h3>السلامة</h3><p>معايير HSE والتدريب الميداني</p></a><a class=\"service-tile reveal\" href=\"#\"><div class=\"service-icon\">08</div><h3>المالية</h3><p>الميزانيات والرسوم والإفصاح المالي</p></a><a class=\"service-tile reveal\" href=\"#\"><div class=\"service-icon\">09</div><h3>الموارد البشرية</h3><p>التوظيف وبناء القدرات</p></a><a class=\"service-tile reveal\" href=\"#\"><div class=\"service-icon\">10</div><h3>الشؤون القانونية</h3><p>العقود والنزاعات والامتثال</p></a><a class=\"service-tile reveal\" href=\"#\"><div class=\"service-icon\">11</div><h3>البحث والتطوير</h3><p>الدراسات الفنية والابتكار</p></a><a class=\"service-tile reveal\" href=\"#\"><div class=\"service-icon\">12</div><h3>التحول الرقمي</h3><p>البوابات والخدمات والبيانات المفتوحة</p></a></div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fe521de",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "cef5465",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "2050077",
+              "elType": "widget",
+              "widgetType": "syria_oil_minister_block",
+              "settings": {
+                "image": {
+                  "url": "https://www.syria-oil.com/wp-content/uploads/image/FB_IMG_1784053160755.jpg",
+                  "id": "",
+                  "alt": "",
+                  "source": "url"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0bca692",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "b955f35",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "07e4731",
+              "elType": "widget",
+              "widgetType": "syria_oil_contact_cta",
+              "settings": {}
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

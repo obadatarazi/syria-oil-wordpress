@@ -1,0 +1,89 @@
+{
+  "version": "0.4",
+  "title": "الاستثمار وفرص الشراكة",
+  "type": "page",
+  "content": [
+    {
+      "id": "88cc5ce",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "c4c3a3c",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "ac68834",
+              "elType": "widget",
+              "widgetType": "syria_oil_page_hero",
+              "settings": {
+                "title": "الاستثمار وفرص الشراكة",
+                "subtitle": "حزم استثمارية في الاستكشاف والإنتاج والبنية التحتية.",
+                "show_breadcrumb": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b6c7f7c",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "a5be333",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "7d20f3c",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"grid-3\">\n  <article class=\"card\"><div class=\"card-body\"><span class=\"badge\">Upstream</span><h3 style=\"margin:1rem 0\">مربعات استكشاف</h3><p class=\"text-muted\" style=\"font-size:.9rem;margin-bottom:1rem\">بيانات أولية، إطار تعاقد، ومسار ترخيص واضح.</p><a class=\"btn btn-primary btn-sm\" href=\"contact.html\">اطلب ملف الفرصة</a></div></article>\n  <article class=\"card\"><div class=\"card-body\"><span class=\"badge\">Midstream</span><h3 style=\"margin:1rem 0\">خطوط النقل</h3><p class=\"text-muted\" style=\"font-size:.9rem;margin-bottom:1rem\">شراكات تأهيل وتشغيل لمقاطع استراتيجية.</p><a class=\"btn btn-primary btn-sm\" href=\"contact.html\">اطلب ملف الفرصة</a></div></article>\n  <article class=\"card\"><div class=\"card-body\"><span class=\"badge\">Downstream</span><h3 style=\"margin:1rem 0\">المصافي</h3><p class=\"text-muted\" style=\"font-size:.9rem;margin-bottom:1rem\">تحديث وحدات ورفع كفاءة وتقليل الانبعاثات.</p><a class=\"btn btn-primary btn-sm\" href=\"contact.html\">اطلب ملف الفرصة</a></div></article>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11291aa",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "4fa33af",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "a0cc4b6",
+              "elType": "widget",
+              "widgetType": "syria_oil_contact_cta",
+              "settings": {}
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

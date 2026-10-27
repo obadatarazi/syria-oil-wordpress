@@ -1,0 +1,460 @@
+{
+  "version": "0.5",
+  "title": "Syria Oil — home",
+  "type": "page",
+  "content": [
+    {
+      "id": "6c1e797",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "501a2d6",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "569dc6c",
+              "elType": "widget",
+              "widgetType": "syria_oil_news_ticker",
+              "settings": {
+                "source": "query",
+                "label": "آخر الأخبار",
+                "query_posts_per_page": 6
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1872429",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "3a3922e",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "317be1e",
+              "elType": "widget",
+              "widgetType": "syria_oil_featured_news_slider",
+              "settings": {
+                "source": "manual",
+                "autoplay": "yes",
+                "autoplay_delay": 6000,
+                "show_arrows": "yes",
+                "show_dots": "yes",
+                "slides": [
+                  {
+                    "image": {
+                      "url": "https://www.syria-oil.com/wp-content/uploads/image/IMG-20260730-WA0089-scaled.jpg"
+                    },
+                    "kicker": "أخبار بارزة",
+                    "title": "بخبرة تتجاوز 30 عاماً واكتشافات عالمية.. “آسبيكت إنرجي” الأمريكية تدرس دخول السوق السورية وتطوير حقول النفط والغاز",
+                    "excerpt": "في خطوة تعكس عودة اهتمام شركات الطاقة الدولية بالسوق السورية، أبدت شركة “آسبيكت إنرجي” الأمريكية اهتماماً جدياً بدراسة الفرص الاستثمارية والدخول إلى قطاع النفط والغاز في سوريا.",
+                    "cta_text": "اقرأ التفاصيل",
+                    "link": {
+                      "url": "https://www.syria-oil.com/20577/",
+                      "is_external": "on",
+                      "nofollow": ""
+                    }
+                  },
+                  {
+                    "image": {
+                      "url": "https://www.syria-oil.com/wp-content/uploads/image/FB_IMG_1785151142379.jpg"
+                    },
+                    "kicker": "المحروقات",
+                    "title": "سوريا تستورد شحنتي مازوت وغاز منزلي بإجمالي يقترب من مليون برميل.. وبدء التفريغ خلال ساعات",
+                    "excerpt": "استقبل مصب بانياس البحري ناقلة مازوت وناقلة غاز مسال في إطار استمرار تأمين احتياجات السوق المحلية من المشتقات النفطية.",
+                    "cta_text": "اقرأ التفاصيل",
+                    "link": {
+                      "url": "https://www.syria-oil.com/20573/",
+                      "is_external": "on",
+                      "nofollow": ""
+                    }
+                  },
+                  {
+                    "image": {
+                      "url": "https://www.syria-oil.com/wp-content/uploads/image/IMG_20260718_093125_314-scaled.jpg"
+                    },
+                    "kicker": "تصريحات",
+                    "title": "قبلاوي: مذكرتا التفاهم خطوة جديدة نحو تعزيز التكامل الإقليمي في قطاع الطاقة",
+                    "excerpt": "إحياء خط الحديثة – بانياس ليس مجرد نقل نفط، بل مشروع استراتيجي يعيد رسم خريطة التعاون الإقليمي في الطاقة.",
+                    "cta_text": "اقرأ التفاصيل",
+                    "link": {
+                      "url": "https://www.syria-oil.com/20569/",
+                      "is_external": "on",
+                      "nofollow": ""
+                    }
+                  },
+                  {
+                    "image": {
+                      "url": "https://www.syria-oil.com/wp-content/uploads/image/IMG_20260718_000529_522.jpg"
+                    },
+                    "kicker": "أخبار بارزة",
+                    "title": "سوريا توقّع مذكرتي تفاهم لإحياء مشروع خط الحديثة – بانياس بالشراكة مع العراق وائتلاف شركات دولي",
+                    "excerpt": "توقيع مذكرة تفاهم لتأهيل وإعادة إحياء خط نقل النفط الحديثة – بانياس بالشراكة مع العراق وائتلاف شركات دولي.",
+                    "cta_text": "اقرأ التفاصيل",
+                    "link": {
+                      "url": "https://www.syria-oil.com/20565/",
+                      "is_external": "on",
+                      "nofollow": ""
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "790e570",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "d0b0320",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "051952f",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {
+                "shortcode": "[syria_oil_mid_ads]"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98af1cb",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "b36757d",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "a72e07a",
+              "elType": "widget",
+              "widgetType": "syria_oil_gif_banner",
+              "settings": {
+                "source": "url",
+                "gif_url": {
+                  "url": "https://www.syria-oil.com/wp-content/uploads/image/free-limousine-service-from-and-to-UAE-airports-by-fly-cham-1.gif"
+                },
+                "alt": "خدمة الليموزين المجانية — Fly Cham",
+                "align": "center",
+                "full_bleed_mobile": "",
+                "object_fit": "contain",
+                "width": {
+                  "unit": "%",
+                  "size": 25
+                },
+                "sor_animate": "yes",
+                "sor_animate_style": "fade-in"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ef20a99",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "d8db404",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "1f832e1",
+              "elType": "widget",
+              "widgetType": "syria_oil_category_sections",
+              "settings": {
+                "posts_per_section": 2,
+                "sor_animate": "yes",
+                "sor_animate_style": "fade-up",
+                "sor_stagger": "yes",
+                "sor_stagger_ms": 80
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1d0b8e6",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "1aa6474",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "785cbad",
+              "elType": "widget",
+              "widgetType": "syria_oil_article_card_grid",
+              "settings": {
+                "show_header": "yes",
+                "eyebrow": "الأخبار",
+                "heading": "أحدث الأخبار",
+                "query_posts_per_page": 6,
+                "query_offset": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "23b66b7",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "c0e59fa",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "a786ea2",
+              "elType": "widget",
+              "widgetType": "syria_oil_jobs_grid",
+              "settings": {
+                "show_header": "yes",
+                "heading": "فرص العمل",
+                "subtitle": "إعلانات فرص العمل المتاحة في شركات قطاع النفط والغاز.",
+                "show_benefits": "",
+                "posts_count": 3,
+                "open_only": "yes",
+                "featured_only": "yes",
+                "for_page": "",
+                "columns": "3",
+                "view_all_text": "عرض الفرص",
+                "view_all_link": { "url": "/careers/" },
+                "sor_animate": "yes",
+                "sor_animate_style": "fade-up"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0df55ae",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "d2f9796",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "6c4e4c1",
+              "elType": "widget",
+              "widgetType": "syria_oil_article_card_grid",
+              "settings": {
+                "show_header": "yes",
+                "eyebrow": "تحليل",
+                "heading": "مقالات الرأي",
+                "query_posts_per_page": 3,
+                "view_all_text": "جميع المقالات",
+                "view_all_link": {
+                  "url": "/articles/"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "87843ca",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "3629d63",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "9550a45",
+              "elType": "widget",
+              "widgetType": "syria_oil_category_flow",
+              "settings": {
+                "source": "terms",
+                "number": 12
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "751db3c",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "ec34b5f",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "e34e90d",
+              "elType": "widget",
+              "widgetType": "syria_oil_partners",
+              "settings": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6a56c1a",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "ea3f15f",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "c71c92a",
+              "elType": "widget",
+              "widgetType": "syria_oil_price_ticker",
+              "settings": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cc90c07",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "d227249",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "f85b2e5",
+              "elType": "widget",
+              "widgetType": "syria_oil_newsletter_cta",
+              "settings": {
+                "mode": "form",
+                "title": "ابقَ على اطلاع",
+                "text": "آخر أخبار النفط والغاز في سوريا والعالم."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "81019f5",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "6ccd89e",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "43382b7",
+              "elType": "widget",
+              "widgetType": "syria_oil_contact_cta",
+              "settings": {}
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {}
+}

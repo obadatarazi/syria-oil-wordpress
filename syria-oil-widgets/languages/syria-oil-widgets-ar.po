@@ -1,0 +1,151 @@
+# Syria Oil Widgets Arabic
+msgid ""
+msgstr ""
+"Project-Id-Version: Syria Oil Widgets 1.1.4\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: syria-oil-widgets\n"
+
+msgid "Read more"
+msgstr "اقرأ المزيد"
+
+msgid "Read the story"
+msgstr "اقرأ التفاصيل"
+
+msgid "All news"
+msgstr "كل الأخبار"
+
+msgid "Breaking"
+msgstr "عاجل"
+
+msgid "Subscribe"
+msgstr "اشترك"
+
+msgid "Latest news"
+msgstr "آخر الأخبار"
+
+msgid "Newsroom"
+msgstr "الأخبار"
+
+msgid "Contact us"
+msgstr "تواصل معنا"
+
+msgid "Stay informed"
+msgstr "ابقَ على اطلاع"
+
+msgid "Get the latest oil and gas updates in your inbox."
+msgstr "احصل على آخر أخبار النفط والغاز في بريدك."
+
+msgid "No posts match this query yet."
+msgstr "لا توجد مقالات مطابقة بعد."
+
+msgid "Prices"
+msgstr "الأسعار"
+
+msgid "Prices updating…"
+msgstr "جاري تحديث الأسعار…"
+
+msgid "Set an EIA API key under Syria Oil → Oil & Gas Prices, then click Refresh now."
+msgstr "أدخل مفتاح EIA من قائمة سوريا أويل ← أسعار النفط والغاز، ثم اضغط تحديث الآن."
+
+msgid "Top news"
+msgstr "أخبار بارزة"
+
+msgid "Breaking sector updates"
+msgstr "تحديثات عاجلة من القطاع"
+
+msgid "Global oil & gas"
+msgstr "نفط وغاز عالمي"
+
+msgid "International markets"
+msgstr "الأسواق الدولية"
+
+msgid "Arab oil & gas"
+msgstr "نفط وغاز عربي"
+
+msgid "Regional coverage"
+msgstr "تغطية إقليمية"
+
+msgid "Fuels"
+msgstr "المحروقات"
+
+msgid "Distribution & pricing"
+msgstr "التوزيع والأسعار"
+
+msgid "Field rehabilitation"
+msgstr "تأهيل الحقول"
+
+msgid "Production"
+msgstr "الإنتاج"
+
+msgid "Refinery upgrade"
+msgstr "تطوير المصفاة"
+
+msgid "Downstream"
+msgstr "التكرير"
+
+msgid "Pipeline integrity"
+msgstr "سلامة خطوط الأنابيب"
+
+msgid "Transport"
+msgstr "النقل"
+
+msgid "Specialized coverage"
+msgstr "تغطية متخصصة"
+
+msgid "Oil, gas, refining and energy projects."
+msgstr "نفط وغاز وتكرير ومشاريع الطاقة."
+
+msgid "Deep archive"
+msgstr "أرشيف عميق"
+
+msgid "Thousands of categorized articles."
+msgstr "آلاف المقالات المصنّفة."
+
+msgid "Official updates"
+msgstr "تحديثات رسمية"
+
+msgid "Ministry decisions and tenders."
+msgstr "قرارات الوزارة والمناقصات."
+
+msgid "Sector partners"
+msgstr "شركاء القطاع"
+
+msgid "National and international companies."
+msgstr "شركات وطنية ودولية."
+
+msgid "Top stories"
+msgstr "أخبار بارزة"
+
+msgid "Tenders"
+msgstr "مناقصات"
+
+msgid "Blog"
+msgstr "مدونة"
+
+msgid "Posts Filter"
+msgstr "تصفية الأخبار"
+
+msgid "تصفح حسب التصنيف"
+msgstr "تصفح حسب التصنيف"
+
+msgid "اضغط على بطاقة أو وسم لتصفية الأخبار فوراً."
+msgstr "اضغط على بطاقة أو وسم لتصفية الأخبار فوراً."
+
+msgid "الكل"
+msgstr "الكل"
+
+msgid "عرض: كل الأخبار"
+msgstr "عرض: كل الأخبار"
+
+msgid "تصنيفات الأخبار"
+msgstr "تصنيفات الأخبار"
+
+msgid "لا توجد مقالات في هذا التصنيف حالياً."
+msgstr "لا توجد مقالات في هذا التصنيف حالياً."
+
+msgid "مدونة"
+msgstr "مدونة"
+

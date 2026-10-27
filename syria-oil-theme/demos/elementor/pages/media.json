@@ -1,0 +1,117 @@
+{
+  "version": "0.4",
+  "title": "الأخبار",
+  "type": "page",
+  "content": [
+    {
+      "id": "e76b53b",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "4846083",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "e9b66a9",
+              "elType": "widget",
+              "widgetType": "syria_oil_page_hero",
+              "settings": {
+                "title": "الأخبار",
+                "subtitle": "صور، فيديو، بيانات صحفية، وحقيبة إعلامية.",
+                "show_breadcrumb": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e91b017",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "7c150bf",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "e1e98e5",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"filter-bar filter-bar--pill\" role=\"toolbar\" aria-label=\"تصفية المركز الإعلامي\">\n  <button class=\"chip is-active\" type=\"button\" data-filter=\"all\" data-target=\".media-grid [data-category]\">الكل</button>\n  <button class=\"chip\" type=\"button\" data-filter=\"photos\" data-target=\".media-grid [data-category]\">صور</button>\n  <button class=\"chip\" type=\"button\" data-filter=\"video\" data-target=\".media-grid [data-category]\">فيديو</button>\n  <button class=\"chip\" type=\"button\" data-filter=\"press\" data-target=\".media-grid [data-category]\">بيانات صحفية</button>\n</div>\n<div class=\"grid-3 media-grid\">\n  <article class=\"card media-item\" data-category=\"photos\"><div class=\"card-media\"><img src=\"https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&amp;fit=crop&amp;w=800&amp;q=80\" alt=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer\"></div><div class=\"card-body\"><span class=\"badge\">صور</span><h3>معرض الحقول</h3></div></article>\n  <article class=\"card media-item\" data-category=\"photos\"><div class=\"card-media\"><img src=\"https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&amp;fit=crop&amp;w=800&amp;q=80\" alt=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer\"></div><div class=\"card-body\"><span class=\"badge\">صور</span><h3>الكوادر الميدانية</h3></div></article>\n  <article class=\"card media-item\" data-category=\"video\"><div class=\"card-media\"><img src=\"https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&amp;fit=crop&amp;w=800&amp;q=80\" alt=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer\"></div><div class=\"card-body\"><span class=\"badge\">فيديو</span><h3>مرافق الغاز</h3></div></article>\n  <article class=\"card media-item\" data-category=\"press\"><div class=\"card-media\"><img src=\"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&amp;fit=crop&amp;w=800&amp;q=80\" alt=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer\"></div><div class=\"card-body\"><span class=\"badge\">بيانات صحفية</span><h3>إحاطة إعلامية</h3></div></article>\n  <article class=\"card media-item\" data-category=\"video\"><div class=\"card-media\"><img src=\"https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&amp;fit=crop&amp;w=800&amp;q=80\" alt=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer\"></div><div class=\"card-body\"><span class=\"badge\">فيديو</span><h3>جولة في المنشآت</h3></div></article>\n  <article class=\"card media-item\" data-category=\"photos\"><div class=\"card-media\"><img src=\"https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&amp;fit=crop&amp;w=800&amp;q=80\" alt=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer\"></div><div class=\"card-body\"><span class=\"badge\">صور</span><h3>خطوط النقل</h3></div></article>\n</div>\n<div class=\"grid-2 media-actions\">\n  <article class=\"card\"><div class=\"card-body\"><h3>الحقيبة الإعلامية</h3><p class=\"text-muted\">شعارات، دليل الهوية، صور عالية الجودة، ونبذة تعريفية.</p><a class=\"btn btn-primary btn-sm\" href=\"/downloads/\">تحميل</a></div></article>\n  <article class=\"card\"><div class=\"card-body\"><h3>بيانات صحفية</h3><p class=\"text-muted\">أرشيف البيانات الرسمية للصحافة ووسائل الإعلام.</p><a class=\"btn btn-secondary btn-sm\" href=\"/news/\">عرض الأرشيف</a></div></article>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b6e05a1",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "e815153",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "c77c9b8",
+              "elType": "widget",
+              "widgetType": "syria_oil_article_card_grid",
+              "settings": {
+                "heading": "آخر التغطيات",
+                "query_posts_per_page": 6
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d1e2148",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "2f68a8d",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "4a32ec7",
+              "elType": "widget",
+              "widgetType": "syria_oil_contact_cta",
+              "settings": {}
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

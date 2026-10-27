@@ -1,0 +1,88 @@
+/* Article Card Grid — section shell + 3-column grid for so-news-card */
+
+.so-card-grid {
+  --so-card-gap: 1.5rem;
+  --so-card-pad: 1.1rem;
+  --so-card-radius: 14px;
+}
+
+.so-card-grid .so-grid,
+.so-card-grid .so-grid--news-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--so-card-gap, 1.35rem);
+  align-items: stretch;
+  text-align: start;
+}
+
+.so-card-grid .so-grid .so-news-card--stack {
+  height: 100%;
+}
+
+.so-card-grid .section-head {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.so-card-grid .section-head > div {
+  width: 100%;
+  max-width: 42rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.so-card-grid .section-head h2 {
+  text-align: center;
+  margin: 0.2rem 0 0;
+  color: var(--color-ink, #0f1419);
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+}
+
+.so-card-grid .section-head .eyebrow {
+  color: var(--color-depth, var(--color-primary, #007a3d));
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.so-card-grid .section-head .btn {
+  margin-inline: auto;
+}
+
+.so-card-grid.section {
+  padding-block: clamp(2rem, 4vw, 3.5rem);
+}
+
+@media (max-width: 1024px) {
+  .so-card-grid .so-grid:not(.so-news-card-slider__track),
+  .so-card-grid .so-grid--news-cards:not(.so-news-card-slider__track) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .so-card-grid.section {
+    padding-block: 1.75rem;
+  }
+
+  .so-card-grid .section-head {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .so-card-grid .section-head .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Slider activation below breakpoint is output per-widget via inline CSS (Mobile slider controls). */

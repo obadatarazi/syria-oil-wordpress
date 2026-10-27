@@ -1,0 +1,859 @@
+/* Syria Oil — Full-site mobile responsiveness (MUST load last)
+ * Ported from ministry-portal/css/mobile.css and adapted for WordPress nav markup.
+ * Breakpoints: Mobile <768px, Tablet 768-1024px, Laptop header ≤1280px, Desktop >1280px.
+ */
+
+img,
+video,
+iframe,
+table,
+pre,
+svg {
+  max-width: 100%;
+}
+
+.container,
+.container-wide {
+  width: min(100% - 1.25rem, var(--container));
+  margin-inline: auto;
+}
+.container-wide { width: min(100% - 1.25rem, var(--container-wide)); }
+
+/* ========== Tablet ≤1024px (align with Elementor tablet) ========== */
+@media (max-width: 1024px) {
+  .layout-sidebar {
+    grid-template-columns: 1fr !important;
+  }
+
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* ========== Header chrome / drawer ≤1280px (11–14" laptops + tablet) ========== */
+@media (max-width: 1280px) {
+	.top-bar-inner {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.35rem;
+    padding-block: 0.55rem;
+    text-align: center;
+  }
+
+  /* Hide legacy top-bar actions if any cached markup remains */
+  .top-actions {
+    display: none !important;
+  }
+
+  .top-meta {
+    flex-wrap: wrap;
+    gap: 0.35rem 0.75rem;
+    font-size: 0.68rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .brand-group {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Keep the logo visible — only hide primary when a mobile sibling exists */
+  .brand-group .brand-logo:not(.brand-logo--mobile-only),
+  .brand-group .brand:not(.brand-logo) {
+    display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .brand-group:has(.brand-logo--mobile-only) .brand-logo:not(.brand-logo--mobile-only) {
+    display: none !important;
+  }
+  .brand-group .brand-logo--mobile-only {
+    display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .brand-group .brand-logo img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: var(--logo-mobile-height, 68px) !important;
+    max-height: var(--logo-mobile-height, 68px) !important;
+    max-width: var(--logo-mobile-max-width, 72px) !important;
+    width: auto !important;
+    object-fit: contain;
+  }
+
+  .header-main {
+    display: grid !important;
+    grid-template-columns: auto minmax(0, 1fr) auto !important;
+    align-items: center !important;
+    justify-content: stretch !important;
+    gap: 0.5rem;
+    min-height: calc(var(--logo-mobile-height, 68px) + 1.1rem) !important;
+    padding-block: 0.55rem !important;
+  }
+
+  /* Mobile: menu | logo (center) | search — logo stays brand anchor */
+  .nav-toggle {
+    display: inline-flex !important;
+    flex-shrink: 0;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+  }
+
+  .brand-group {
+    width: auto;
+    flex: 0 0 auto;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    max-width: 100%;
+  }
+
+  .header-tools {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.35rem;
+    width: auto;
+    flex: 0 0 auto;
+    min-width: 0;
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+  }
+
+  .lang-switch {
+    flex-shrink: 0;
+  }
+
+  /* Compact search: icon by default; expands to type on focus */
+  .header-search {
+    display: flex !important;
+    position: relative;
+    flex: 0 0 auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    gap: 0;
+  }
+
+  .header-search input {
+    position: absolute;
+    inset-inline-end: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    min-height: 44px;
+    opacity: 0;
+    pointer-events: none;
+    border: 1px solid var(--color-border, #e2e8f0);
+    border-radius: 10px;
+    background: var(--color-surface, #fff);
+    padding-inline: 0.75rem;
+    z-index: 5;
+    transition: width 0.2s ease, opacity 0.15s ease;
+  }
+
+  .header-search:focus-within input,
+  .header-search.is-open input {
+    width: min(70vw, 220px);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .header-search .header-search__submit,
+  .header-search .btn {
+    display: none !important;
+  }
+
+  .header-search__icon {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: var(--radius-md, 10px);
+    border: 1px solid var(--color-border, #e2e8f0);
+    background: var(--color-surface, #fff);
+    color: var(--color-ink, #0f1419);
+    font-size: 1.15rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    z-index: 6;
+  }
+
+  /* Off-canvas drawer — above bottom-nav (1300) so the menu is never blocked. */
+  .nav-wrap {
+    display: none !important;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    inset-inline-start: 0;
+    inset-inline-end: auto;
+    width: min(86vw, 320px);
+    max-width: 100%;
+    z-index: 1500;
+    background: #fff;
+    color: var(--color-ink, #0f1419);
+    border-inline-end: 1px solid var(--color-border, #d7e3db);
+    box-shadow: -12px 0 40px rgba(15, 20, 25, 0.18);
+    padding: 0 0 5.5rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  [dir="rtl"] .nav-wrap {
+    box-shadow: 12px 0 40px rgba(15, 20, 25, 0.18);
+  }
+
+  .nav-wrap.is-open { display: block !important; }
+
+  .nav-drawer-brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 1rem 1rem 0.85rem;
+    border-bottom: 1px solid var(--color-border, #d7e3db);
+    background: color-mix(in srgb, var(--color-primary, #007a3d) 6%, #fff);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+  .nav-drawer-brand__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 0;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .nav-drawer-brand__logo {
+    display: block;
+    height: var(--logo-drawer-height, 80px);
+    max-height: var(--logo-drawer-height, 80px);
+    max-width: var(--logo-drawer-max-width, 120px);
+    width: auto;
+    object-fit: contain;
+  }
+
+  .nav-drawer-brand__text {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+
+  .nav-drawer-close {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 12px;
+    background: transparent;
+    color: var(--color-ink, #0f1419);
+    font-size: 1.75rem;
+    line-height: 1;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-drawer-close:hover,
+  .nav-drawer-close:focus-visible {
+    background: color-mix(in srgb, var(--color-primary, #007a3d) 12%, #fff);
+  }
+
+  /* Keep header from clipping the fixed drawer / stacking below it. */
+  .site-header {
+    overflow: visible !important;
+  }
+
+  .main-nav,
+  .main-nav ul {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    gap: 0.25rem;
+    padding: 0.5rem 1rem 1rem !important;
+    overflow: visible !important;
+    width: 100%;
+  }
+
+  .main-nav .menu-item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .main-nav a {
+    flex: 1;
+    min-width: 0;
+    min-height: 48px;
+    display: flex !important;
+    align-items: center;
+    padding: 0.75rem 1rem !important;
+    font-size: 0.95rem !important;
+    border-radius: 12px;
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  /* Submenus become inline collapsibles on mobile */
+  .submenu-toggle { display: inline-flex !important; }
+
+  .main-nav .sub-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: 0;
+    border-inline-start: 2px solid var(--color-border);
+    border-radius: 0;
+    margin: 0 0 0.25rem;
+    padding-block: 0;
+    padding-inline: 0.5rem 0;
+    width: 100%;
+    display: none;
+  }
+
+  .main-nav .menu-item-has-children.is-expanded > .sub-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .submenu-toggle {
+    position: relative;
+    z-index: 2;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  /* Footer: brand full-width centered, then 2 menu cols, then contact */
+  .footer-grid,
+  .footer-grid--3,
+  .footer-grid--4,
+  .site-footer .footer-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1.5rem 1rem !important;
+    text-align: start;
+  }
+
+  .footer-grid > .footer-brand,
+  .footer-grid > .is-footer-brand {
+    grid-column: 1 / -1 !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-grid > .footer-brand p,
+  .footer-grid > .is-footer-brand p {
+    max-width: 28rem;
+    margin-inline: auto;
+  }
+
+  .footer-grid > .footer-brand .social-row,
+  .footer-grid > .is-footer-brand .social-row {
+    justify-content: center;
+  }
+
+  .footer-brand .brand-logo img,
+  .footer-brand .brand img,
+  .site-footer .brand-logo img,
+  .elementor-location-footer .elementor-widget-theme-site-logo img {
+    height: var(--logo-footer-mobile-height, 56px) !important;
+    max-height: var(--logo-footer-mobile-height, 56px) !important;
+    max-width: var(--logo-footer-mobile-max-width, 96px) !important;
+  }
+
+  .footer-grid > .footer-col--contact {
+    grid-column: 1 / -1 !important;
+    text-align: center;
+  }
+
+  .footer-col--contact .footer-contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.65rem;
+  }
+
+  .footer-col--contact .footer-contact-item {
+    justify-content: center;
+  }
+
+  .footer-contact-item--desktop-only {
+    display: none !important;
+  }
+
+  .footer-bottom,
+  .site-footer .footer-bottom {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 0.35rem;
+    width: 100%;
+  }
+
+  .footer-bottom span {
+    text-align: center !important;
+    width: 100%;
+  }
+
+  /* Hero: content-sized on mobile — no tall empty block */
+  .home-hero {
+    min-height: 0 !important;
+    align-items: stretch !important;
+  }
+
+  .home-hero-content {
+    padding-block: 1.35rem 1.5rem !important;
+  }
+
+  .home-hero .lede {
+    margin-bottom: 1rem !important;
+  }
+
+  .hero-actions {
+    margin-bottom: 0 !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section { padding-block: 2.25rem !important; }
+
+  .section-head {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 0.85rem;
+  }
+  .section-head .btn {
+    width: auto;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .page-hero,
+  .page-hero .container,
+  .home-hero-content,
+  .portal-page-content,
+  .entry-content {
+    text-align: start;
+  }
+
+  .card-body { padding: 1rem 1rem 1.2rem !important; }
+  .btn { min-height: 44px; }
+
+  .search-box { flex-wrap: wrap; }
+  .search-box .btn { width: 100%; }
+
+  .article-body { padding: 1.15rem !important; }
+}
+
+/* ========== Phone layouts ≤767px (Elementor mobile) ========== */
+@media (max-width: 767px) {
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .layout-sidebar {
+    grid-template-columns: 1fr !important;
+  }
+
+  .portal-page-content .grid-2,
+  .portal-page-content .grid-3,
+  .portal-page-content .grid-4 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ========== Phones ≤640px ========== */
+@media (max-width: 640px) {
+  .container,
+  .container-wide {
+    width: min(100% - 0.85rem, var(--container)) !important;
+  }
+
+  .brand-text span { display: none !important; }
+  .brand-logo-img {
+    width: var(--logo-mobile-max-width, 72px);
+    height: var(--logo-mobile-height, 68px);
+  }
+  .brand-text strong { font-size: 0.9rem !important; }
+
+  .site-footer { margin-top: 2.5rem !important; padding-top: 2rem !important; }
+
+  .footer-bottom,
+  .site-footer .footer-bottom {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .stat-card { padding: 1rem !important; }
+  .page-hero { padding: 1.75rem 0 1.5rem !important; }
+  .page-hero h1 { font-size: 1.25rem !important; }
+  .page-hero p { max-width: 100%; }
+
+  .portal-page-content .grid-2,
+  .portal-page-content .grid-3,
+  .portal-page-content .grid-4 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .portal-page-content .card,
+  .portal-page-content .service-tile,
+  .portal-page-content .stat-card {
+    width: 100%;
+  }
+}
+
+/* ========== Tiny phones ≤380px ========== */
+@media (max-width: 380px) {
+  .main-nav a { padding: 0.5rem 0.7rem !important; font-size: 0.85rem !important; }
+}
+
+/* ========== Elementor homepage widget stacks ========== */
+@media (max-width: 1024px) {
+  .elementor-widget-syria_oil_featured_news_slider .elementor-widget-container,
+  .elementor-widget-syria_oil_spotlight_rail .elementor-widget-container,
+  .elementor-widget-syria_oil_overview_cards .elementor-widget-container,
+  .elementor-widget-syria_oil_stats_cards .elementor-widget-container,
+  .elementor-widget-syria_oil_minister_block .elementor-widget-container,
+  .elementor-widget-syria_oil_article_card_grid .elementor-widget-container,
+  .elementor-widget-syria_oil_ad_banner .elementor-widget-container,
+  .elementor-widget-syria_oil_newsletter_cta .elementor-widget-container {
+    max-width: 100%;
+  }
+
+  .elementor .elementor-section.elementor-section-boxed > .elementor-container {
+    max-width: min(100%, var(--container, 1200px));
+    padding-inline: 0.75rem;
+  }
+}
+
+@media (max-width: 767px) {
+  /* —— Full-bleed hero (edge-to-edge, no side gaps) —— */
+  html {
+    overflow-x: clip;
+  }
+
+  body.has-side-ads .site-shell__main,
+  body.no-side-ads .site-shell__main,
+  .site-shell__main,
+  #main.site-main {
+    width: 100% !important;
+    max-width: none !important;
+    margin-inline: 0 !important;
+    padding-inline: 0 !important;
+  }
+
+  .site-shell {
+    padding-inline: 0 !important;
+  }
+
+  .site-shell__mobile-ads {
+    margin-inline: 0.65rem;
+    margin-block: 0.5rem 0.75rem;
+  }
+
+  /* Keep non-hero Elementor sections padded */
+  .elementor-section.elementor-section-boxed > .elementor-container {
+    padding-inline: 0.65rem !important;
+  }
+
+  /* Kill every inset around the featured slider */
+  .elementor-section:has(.elementor-widget-syria_oil_featured_news_slider),
+  .elementor-top-section:has(.elementor-widget-syria_oil_featured_news_slider),
+  .elementor-element:has(> .elementor-widget-container > .so-slider),
+  .elementor-widget-syria_oil_featured_news_slider {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-inline: 0 !important;
+    padding-inline: 0 !important;
+  }
+  .elementor-section:has(.elementor-widget-syria_oil_featured_news_slider) > .elementor-container,
+  .elementor-section:has(.elementor-widget-syria_oil_featured_news_slider) .elementor-column,
+  .elementor-section:has(.elementor-widget-syria_oil_featured_news_slider) .elementor-widget-wrap,
+  .elementor-section:has(.elementor-widget-syria_oil_featured_news_slider) .elementor-widget-container,
+  .elementor-widget-syria_oil_featured_news_slider > .elementor-widget-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-inline: 0 !important;
+    padding-inline: 0 !important;
+  }
+
+  /* Nuclear full-bleed on the dark hero block itself */
+  .so-slider {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-inline: calc(50% - 50vw) !important;
+    border-radius: 0 !important;
+    box-sizing: border-box !important;
+  }
+  .so-slider__slide {
+    border-radius: 0 !important;
+  }
+
+  /* News bar / ticker — full width edge-to-edge on mobile */
+  .elementor-section:has(.elementor-widget-syria_oil_news_ticker),
+  .elementor-widget-syria_oil_news_ticker,
+  .elementor-widget-syria_oil_news_ticker > .elementor-widget-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-inline: 0 !important;
+    padding-inline: 0 !important;
+  }
+  .elementor-section:has(.elementor-widget-syria_oil_news_ticker) > .elementor-container,
+  .elementor-section:has(.elementor-widget-syria_oil_news_ticker) .elementor-column,
+  .elementor-section:has(.elementor-widget-syria_oil_news_ticker) .elementor-widget-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-inline: 0 !important;
+    padding-inline: 0 !important;
+  }
+  .sow-ticker {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-inline: calc(50% - 50vw) !important;
+    border-radius: 0 !important;
+  }
+
+  .elementor-widget:not(:last-child) {
+    margin-bottom: 0.25rem;
+  }
+
+  /* Soften Elementor column padding on phones without nuking custom layouts. */
+  .elementor-section.elementor-section-boxed > .elementor-container > .elementor-column > .elementor-widget-wrap {
+    padding-inline: 0;
+  }
+
+  /* Theme cards (non-Elementor grids): lighter mobile scan */
+  .card .card-media-caption {
+    display: none !important;
+  }
+  .card .card-excerpt {
+    display: none !important;
+  }
+  .card .card-media {
+    max-height: 180px;
+  }
+  .card h3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .sow-newsletter-form {
+    width: 100%;
+    flex-direction: column;
+  }
+  .sow-newsletter-form input[type="email"],
+  .sow-newsletter-form button,
+  .sow-newsletter-form .btn {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .sow-newsletter__actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .sow-newsletter__actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Partners: single horizontal swipe row */
+  .sow-partners {
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 0.65rem;
+    padding-bottom: 0.25rem;
+  }
+  .sow-partners a,
+  .sow-partners span {
+    flex: 0 0 auto !important;
+    min-width: 110px !important;
+    scroll-snap-align: start;
+  }
+}
+
+/* Safe areas */
+@supports (padding: max(0px)) {
+  body {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+}
+
+/* ========== Drawer backdrop on laptop+tablet (matches hamburger ≤1280) ========== */
+@media (max-width: 1280px) {
+  body.nav-open { overflow: hidden; }
+
+  .nav-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 1400;
+    background: rgba(15, 20, 25, 0.55);
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  .nav-backdrop[hidden] { display: none !important; }
+}
+
+/* ========== Bottom bar ≤1024px (phones/tablets) ========== */
+@media (max-width: 1024px) {
+  body.has-bottom-nav {
+    padding-bottom: calc(4.25rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* Sticky bottom tabs — one even horizontal row (never stacked) */
+  .bottom-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch;
+    justify-content: space-between;
+    position: fixed;
+    inset: auto 0 0 0;
+    z-index: 1300;
+    width: 100%;
+    box-sizing: border-box;
+    background: color-mix(in srgb, var(--color-surface, #fff) 98%, transparent);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid var(--color-border, #e2e8f0);
+    padding: 0.3rem 0.15rem calc(0.3rem + env(safe-area-inset-bottom, 0px));
+    box-shadow: 0 -10px 32px color-mix(in srgb, var(--color-ink, #0f1419) 12%, transparent);
+    gap: 0;
+  }
+
+  body.nav-open .bottom-nav {
+    /* Keep More tappable; sit under the drawer panel. */
+    z-index: 1450;
+  }
+
+  /* Flatten any WP ul/li so every tab is a direct flex item */
+  .bottom-nav > ul,
+  .bottom-nav > .menu,
+  .bottom-nav .menu-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: contents;
+  }
+
+  .bottom-nav > a,
+  .bottom-nav > button,
+  .bottom-nav a.bn-link,
+  .bottom-nav #nav-toggle-bottom {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: var(--color-muted, #64748b);
+    font: inherit;
+    font-size: 0.62rem;
+    font-weight: 700;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0.15rem;
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    min-height: 52px;
+    width: auto !important;
+    max-width: none !important;
+    padding: 0.35rem 0.1rem;
+    text-decoration: none;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .bottom-nav a.is-active,
+  .bottom-nav .current-menu-item > a,
+  .bottom-nav .current_page_item > a,
+  .bottom-nav button[aria-expanded="true"] {
+    color: var(--color-primary);
+    background: var(--color-primary-soft);
+  }
+
+  .bottom-nav a.is-active::after,
+  .bottom-nav .current-menu-item > a::after,
+  .bottom-nav .current_page_item > a::after,
+  .bottom-nav button[aria-expanded="true"]::after {
+    content: "";
+    position: absolute;
+    top: 0.35rem;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--color-primary);
+  }
+
+  .bottom-nav .bn-ico {
+    font-size: 1.25rem;
+    line-height: 1;
+    display: block;
+  }
+
+  .bottom-nav .bn-label {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-inline: 0.1rem;
+  }
+}

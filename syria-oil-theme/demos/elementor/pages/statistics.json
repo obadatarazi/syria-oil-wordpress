@@ -1,0 +1,87 @@
+{
+  "version": "0.4",
+  "title": "الإحصاءات والبيانات المفتوحة",
+  "type": "page",
+  "content": [
+    {
+      "id": "2dc9faf",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "b1e270e",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "ffb4e3f",
+              "elType": "widget",
+              "widgetType": "syria_oil_page_hero",
+              "settings": {
+                "title": "الإحصاءات والبيانات المفتوحة",
+                "subtitle": "جداول ومؤشرات قابلة للتحميل Excel/PDF.",
+                "show_breadcrumb": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ae08a02",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "ce1470a",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "641ee2b",
+              "elType": "widget",
+              "widgetType": "syria_oil_stats_cards",
+              "settings": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c10246b",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "2cfadf9",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "fdf567e",
+              "elType": "widget",
+              "widgetType": "syria_oil_price_ticker",
+              "settings": {}
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

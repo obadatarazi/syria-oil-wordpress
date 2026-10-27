@@ -1,0 +1,13 @@
+{
+  "version": "0.4",
+  "title": "Syria Oil \u2014 syria_oil_minister_block",
+  "type": "widget",
+  "content": [
+    {
+      "id": "preset",
+      "elType": "widget",
+      "widgetType": "syria_oil_minister_block",
+      "settings": {}
+    }
+  ]
+}

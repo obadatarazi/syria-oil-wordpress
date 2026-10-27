@@ -1,0 +1,62 @@
+{
+  "version": "0.4",
+  "title": "الأسئلة الشائعة",
+  "type": "page",
+  "content": [
+    {
+      "id": "6be93de",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "c3a6ba2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "d965a79",
+              "elType": "widget",
+              "widgetType": "syria_oil_page_hero",
+              "settings": {
+                "title": "الأسئلة الشائعة",
+                "subtitle": "أكثر من 50 سؤالاً مصنّفاً بإجابات واضحة.",
+                "show_breadcrumb": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1850071",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "5a52be5",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "4ae856f",
+              "elType": "widget",
+              "widgetType": "syria_oil_faq_accordion",
+              "settings": {}
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

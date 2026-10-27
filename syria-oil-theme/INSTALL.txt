@@ -1,0 +1,33 @@
+Syria Oil WordPress Theme
+Publisher: Obada Al Tarazi — https://www.linkedin.com/in/obada-tarazi
+Version: 1.7.3
+
+INSTALL
+-------
+1. Appearance → Themes → Upload → syria-oil-theme.zip → Activate
+2. Plugins → Add New → Upload → syria-oil-widgets.zip → Activate
+3. Install Elementor (required for widgets)
+4. Syria Oil (top-level admin menu) → Theme Options
+   Brand colors, fonts, layout, logos, prices, widget defaults
+   (Set colors HERE — not in Elementor Site Settings)
+5. Syria Oil → Setup → Install portal pages + news/articles
+6. Syria Oil → Setup → Re-apply Elementor demos to all pages
+7. (Elementor Pro) Syria Oil → Setup → Apply Single Post + Archive Theme Builder templates
+   so “Read more” opens an editable Single Post layout
+
+Keep Elementor + Syria Oil Widgets active so seeded page layouts render.
+Elementor Pro unlocks Theme Builder Single/Archive demos.
+
+OPTIONAL
+--------
+One Click Demo Import: Appearance → Import Demo Data
+demos/elementor/kit.json — Elementor kit colors/fonts
+Or: Elementor → Tools / Kits → Import kit.json
+
+WIDGETS (plugin)
+----------------
+Featured News Slider, Article Card Grid, News Ticker,
+Spotlight/Hero Rail, FAQ Accordion, Newsletter CTA, Price Ticker,
+Page Hero, Overview Cards, Stats Cards, Service Tiles, Category Flow,
+Minister Block, Ad Banner, Project Cards, Partners, Contact CTA
+Slugs preserved: syria_oil_featured_news_slider, syria_oil_article_card_grid

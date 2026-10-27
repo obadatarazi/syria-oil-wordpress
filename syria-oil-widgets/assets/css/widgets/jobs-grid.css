@@ -1,0 +1,17 @@
+/* Jobs Grid widget */
+
+.sow-jobs-grid .so-jobs__grid {
+  grid-template-columns: repeat(var(--so-jobs-cols, 3), minmax(0, 1fr));
+}
+
+@media (max-width: 1024px) {
+  .sow-jobs-grid .so-jobs__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .sow-jobs-grid .so-jobs__grid {
+    grid-template-columns: 1fr;
+  }
+}

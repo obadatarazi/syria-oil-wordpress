@@ -1,0 +1,64 @@
+/*
+Theme Name: Syria Oil
+*/
+
+/**
+ * RTL companion stylesheet.
+ *
+ * Loaded automatically by WordPress when is_rtl() is true.
+ * Primary layout already uses logical properties (inset-inline-*,
+ * margin-inline, border-inline-*). This file covers residual physical
+ * overrides and ensures LTR ↔ RTL language switches stay intact.
+ */
+
+body {
+  direction: rtl;
+  text-align: start;
+}
+
+/* Skip-link focus: keep visible at the start edge in both directions. */
+.screen-reader-text:focus {
+  inset-inline-start: 5px;
+  left: auto;
+}
+
+/* Pagination arrows feel natural in RTL. */
+.nav-links .nav-previous {
+  float: right;
+}
+
+.nav-links .next,
+.nav-links .nav-next {
+  float: left;
+  text-align: start;
+}
+
+/* Keep form controls and search inputs aligned to the reading start. */
+input[type="search"],
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+textarea,
+select {
+  text-align: start;
+}
+
+/* Imported WP content often uses physical floats — flip for RTL reading. */
+.alignleft {
+  float: right;
+  margin-inline-start: 1em;
+  margin-inline-end: 0;
+}
+
+.alignright {
+  float: left;
+  margin-inline-end: 1em;
+  margin-inline-start: 0;
+}
+
+.aligncenter {
+  display: block;
+  margin-inline: auto;
+  float: none;
+}

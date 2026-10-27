@@ -1,0 +1,21 @@
+{
+  "version": "0.4",
+  "title": "Syria Oil — FAQ Accordion",
+  "type": "widget",
+  "content": [
+    {
+      "id": "sowPresetFaq",
+      "elType": "widget",
+      "widgetType": "syria_oil_faq_accordion",
+      "settings": {
+        "first_open": "yes",
+        "items": [
+          {
+            "question": "ما هو هذا الموقع؟",
+            "answer": "بوابة إخبارية لقطاع النفط والغاز."
+          }
+        ]
+      }
+    }
+  ]
+}

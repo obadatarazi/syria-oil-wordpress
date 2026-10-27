@@ -1,0 +1,176 @@
+{
+  "version": "0.4",
+  "title": "Syria Oil — Header",
+  "type": "header",
+  "conditions": [
+    "include/entire_site"
+  ],
+  "page_settings": {
+    "content_wrapper_html_tag": "header"
+  },
+  "content": [
+    {
+      "id": "a1b2c301",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1200
+        },
+        "gap": "no",
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": "10",
+          "right": "16",
+          "bottom": "10",
+          "left": "16",
+          "isLinked": false
+        },
+        "css_classes": "so-el-header"
+      },
+      "elements": [
+        {
+          "id": "a1b2c302",
+          "elType": "column",
+          "settings": {
+            "_column_size": 20,
+            "_inline_size": 18,
+            "content_position": "center",
+            "align": "flex-start"
+          },
+          "elements": [
+            {
+              "id": "a1b2c303",
+              "elType": "widget",
+              "widgetType": "theme-site-logo",
+              "settings": {
+                "align": "right",
+                "width": {
+                  "unit": "px",
+                  "size": 52
+                },
+                "max_width": {
+                  "unit": "px",
+                  "size": 56
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "a1b2c304",
+          "elType": "column",
+          "settings": {
+            "_column_size": 45,
+            "_inline_size": 50,
+            "content_position": "center",
+            "align": "center"
+          },
+          "elements": [
+            {
+              "id": "a1b2c305",
+              "elType": "widget",
+              "widgetType": "nav-menu",
+              "settings": {
+                "layout": "horizontal",
+                "align": "center",
+                "pointer": "underline",
+                "pointer_color": "#007A3D",
+                "color_menu_item": "#334155",
+                "color_menu_item_hover": "#0F1419",
+                "color_menu_item_active": "#0F1419",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13
+                },
+                "typography_font_weight": "600",
+                "padding_horizontal_menu_item": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "padding_vertical_menu_item": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "menu": "__PRIMARY_MENU__"
+              }
+            }
+          ]
+        },
+        {
+          "id": "a1b2c306",
+          "elType": "column",
+          "settings": {
+            "_column_size": 35,
+            "_inline_size": 32,
+            "content_position": "center",
+            "align": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "a1b2c309",
+              "elType": "section",
+              "isInner": true,
+              "settings": {
+                "layout": "full_width",
+                "gap": "no",
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "a1b2c310",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 35,
+                    "content_position": "center"
+                  },
+                  "elements": [
+                    {
+                      "id": "a1b2c307",
+                      "elType": "widget",
+                      "widgetType": "shortcode",
+                      "settings": {
+                        "shortcode": "[syria_oil_lang_toggle]"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "a1b2c311",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 65,
+                    "content_position": "center"
+                  },
+                  "elements": [
+                    {
+                      "id": "a1b2c308",
+                      "elType": "widget",
+                      "widgetType": "search-form",
+                      "settings": {
+                        "skin": "classic",
+                        "placeholder": "ابحث في الأخبار…",
+                        "size": "sm"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

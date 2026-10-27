@@ -1,0 +1,89 @@
+{
+  "version": "0.5",
+  "title": "Syria Oil — privacy-policy",
+  "type": "page",
+  "content": [
+    {
+      "id": "148b0b1",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "c2cdd66",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "e55ceb4",
+              "elType": "widget",
+              "widgetType": "syria_oil_page_hero",
+              "settings": {
+                "title": "سياسة الخصوصية",
+                "subtitle": "كيف نتعامل مع بيانات الزوار وما نجمعه وكيف نحميه.",
+                "show_breadcrumb": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c965d49",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "6644a0c",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "7ec5d41",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"card\"><div class=\"card-body\" style=\"line-height:1.9\">\n  <p>تحترم منصة <strong>سيريا أويل</strong> خصوصية زوارها. توضح هذه الصفحة أنواع المعلومات التي قد تُجمع عند استخدام الموقع، وأغراض استخدامها.</p>\n  <h2>البيانات التي قد نجمعها</h2>\n  <ul>\n    <li>بيانات تقنية أساسية مثل عنوان IP ونوع المتصفح وصفحات الزيارة (عبر سجلات الخادم أو أدوات تحليلية).</li>\n    <li>بيانات تقدّمها طواعية عبر نماذج التواصل أو الاشتراك في النشرة البريدية (الاسم والبريد الإلكتروني).</li>\n    <li>ملفات تعريف الارتباط (Cookies) اللازمة لتشغيل الموقع وتحسين التجربة.</li>\n  </ul>\n  <h2>كيف نستخدم البيانات</h2>\n  <ul>\n    <li>تشغيل الموقع وتأمينه وتحسين الأداء.</li>\n    <li>الرد على استفساراتكم وإرسال النشرة عند الاشتراك.</li>\n    <li>فهم اهتمامات القرّاء بشكل مجمّع وغير شخصي قدر الإمكان.</li>\n  </ul>\n  <h2>المشاركة مع طرف ثالث</h2>\n  <p>لا نبيع بياناتكم الشخصية. قد تُشارك بيانات محدودة مع مزوّدي خدمات ضروريين (استضافة، بريد، تحليلات) وفق عقود ومعايير حماية مناسبة.</p>\n  <h2>حقوقكم</h2>\n  <p>يمكنكم طلب الاطلاع على بياناتكم أو تصحيحها أو حذفها عبر صفحة <a href=\"/contact/\">اتصل بنا</a>، مع مراعاة المتطلبات القانونية والتشغيلية.</p>\n  <h2>التحديثات</h2>\n  <p>قد نحدّث هذه السياسة من وقت لآخر. يُعدّ استمرار استخدام الموقع بعد نشر التعديلات موافقة على النسخة المحدّثة.</p>\n  <p class=\"text-muted\">آخر تحديث: أغسطس 2026</p>\n</div></div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5797e8f",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "93a25e0",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "9376875",
+              "elType": "widget",
+              "widgetType": "syria_oil_contact_cta",
+              "settings": {}
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {}
+}

@@ -1,0 +1,101 @@
+{
+  "version": "0.4",
+  "title": "الوظائف والتوظيف",
+  "type": "page",
+  "content": [
+    {
+      "id": "78c1bc1",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "ecb1e0c",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "7b19195",
+              "elType": "widget",
+              "widgetType": "syria_oil_page_hero",
+              "settings": {
+                "title": "الوظائف والتوظيف",
+                "subtitle": "الوظائف الشاغرة والمزايا ونموذج التقديم.",
+                "show_breadcrumb": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4230f35",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "f66ab5d",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "jbgrid01",
+              "elType": "widget",
+              "widgetType": "syria_oil_jobs_grid",
+              "settings": {
+                "show_header": "yes",
+                "heading": "الوظائف المفتوحة",
+                "subtitle": "قدّم مباشرة من صفحة كل فرصة.",
+                "show_benefits": "yes",
+                "posts_count": 12,
+                "open_only": "yes",
+                "featured_only": "",
+                "for_page": "yes",
+                "columns": "3",
+                "view_all_text": "",
+                "empty_text": "لا توجد فرص عمل متاحة حالياً.",
+                "sor_animate": "yes",
+                "sor_animate_style": "fade-up"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dd14990",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "8eade02",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "5bd7db2",
+              "elType": "widget",
+              "widgetType": "syria_oil_contact_cta",
+              "settings": {}
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {}
+}

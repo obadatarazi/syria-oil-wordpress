@@ -1,0 +1,66 @@
+{
+  "version": "0.4",
+  "title": "الأخبار",
+  "type": "page",
+  "content": [
+    {
+      "id": "6f83c43",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "50f6076",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "0c20ded",
+              "elType": "widget",
+              "widgetType": "syria_oil_page_hero",
+              "settings": {
+                "title": "الأخبار",
+                "subtitle": "أحدث التغطيات من قطاع النفط والغاز السوري.",
+                "show_breadcrumb": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bd602ae",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "9740c48",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "68cf299",
+              "elType": "widget",
+              "widgetType": "syria_oil_article_card_grid",
+              "settings": {
+                "show_header": "yes",
+                "heading": "الأخبار",
+                "query_posts_per_page": 9
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

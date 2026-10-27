@@ -1,0 +1,406 @@
+/**
+ * Syria Oil — professional CSF admin shell.
+ */
+
+.syria-oil-csf.csf-options {
+	--so-admin-primary: #007a3d;
+	--so-admin-primary-dark: #005c2e;
+	--so-admin-ink: #0f1419;
+	--so-admin-muted: #5c6b7a;
+	--so-admin-border: #e2e8f0;
+	--so-admin-surface: #ffffff;
+	--so-admin-canvas: #f4f7fa;
+	--so-admin-radius: 12px;
+	--so-admin-shadow: 0 1px 2px rgba(15, 20, 25, 0.06), 0 8px 24px rgba(15, 20, 25, 0.06);
+	font-family: "IBM Plex Sans", "IBM Plex Sans Arabic", system-ui, sans-serif;
+}
+
+.syria-oil-csf .csf-header-inner {
+	background: linear-gradient(135deg, var(--so-admin-primary-dark) 0%, var(--so-admin-primary) 55%, #0a8f4a 100%);
+	border: 0;
+	border-radius: var(--so-admin-radius) var(--so-admin-radius) 0 0;
+	padding: 1.35rem 1.5rem;
+	box-shadow: var(--so-admin-shadow);
+}
+
+.syria-oil-csf .csf-header-inner h1 {
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	margin: 0;
+	font-size: 1.35rem;
+}
+
+.syria-oil-csf .csf-header-inner h1 small {
+	display: inline-block;
+	margin-inline-start: 0.5rem;
+	padding: 0.15rem 0.55rem;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.18);
+	color: rgba(255, 255, 255, 0.95);
+	font-size: 0.72rem;
+	font-weight: 600;
+	vertical-align: middle;
+}
+
+.syria-oil-csf .csf-header-left,
+.syria-oil-csf .csf-header-right {
+	align-items: center;
+}
+
+.syria-oil-csf .csf-header-right .button,
+.syria-oil-csf .csf-header-right .csf-expand-all {
+	border-radius: 8px;
+}
+
+.syria-oil-csf .csf-wrapper {
+	background: var(--so-admin-canvas);
+	border: 1px solid var(--so-admin-border);
+	border-radius: 0 0 var(--so-admin-radius) var(--so-admin-radius);
+	overflow: hidden;
+}
+
+.syria-oil-csf .csf-nav {
+	background: var(--so-admin-surface);
+	border-inline-end: 1px solid var(--so-admin-border);
+	padding: 0.75rem 0.5rem;
+}
+
+.syria-oil-csf .csf-nav ul li a {
+	border-radius: 8px;
+	margin: 0.1rem 0.35rem;
+	padding: 0.65rem 0.85rem;
+	color: var(--so-admin-ink);
+	font-weight: 500;
+	transition: background 0.15s ease, color 0.15s ease;
+}
+
+.syria-oil-csf .csf-nav ul li a:hover {
+	background: color-mix(in srgb, var(--so-admin-primary) 8%, #fff);
+	color: var(--so-admin-primary-dark);
+}
+
+.syria-oil-csf .csf-nav ul li .csf-active {
+	background: color-mix(in srgb, var(--so-admin-primary) 14%, #fff);
+	color: var(--so-admin-primary-dark);
+	font-weight: 600;
+	box-shadow: inset 3px 0 0 var(--so-admin-primary);
+}
+
+.syria-oil-csf .csf-nav ul li a i {
+	opacity: 0.85;
+	width: 1.1rem;
+}
+
+.syria-oil-csf .csf-content {
+	padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.syria-oil-csf .csf-section-title h3 {
+	font-size: 1.15rem;
+	font-weight: 700;
+	color: var(--so-admin-ink);
+	letter-spacing: -0.01em;
+}
+
+.syria-oil-csf .csf-section-description {
+	margin-bottom: 1rem;
+	padding: 0.85rem 1rem;
+	border-radius: 8px;
+	background: color-mix(in srgb, var(--so-admin-primary) 6%, #fff);
+	border: 1px solid color-mix(in srgb, var(--so-admin-primary) 18%, var(--so-admin-border));
+	color: var(--so-admin-muted);
+	font-size: 13px;
+	line-height: 1.55;
+}
+
+.syria-oil-csf .csf-field {
+	background: var(--so-admin-surface);
+	border: 1px solid var(--so-admin-border);
+	border-radius: 10px;
+	padding: 1rem 1.1rem;
+	margin-bottom: 0.85rem;
+	box-shadow: 0 1px 0 rgba(15, 20, 25, 0.03);
+}
+
+.syria-oil-csf .csf-field-submessage,
+.syria-oil-csf .csf-field-content,
+.syria-oil-csf .csf-field-callback {
+	border: 0;
+	box-shadow: none;
+	background: transparent;
+	padding: 0;
+}
+
+.syria-oil-csf .csf-field-submessage .csf-submessage {
+	border-radius: 8px;
+}
+
+.syria-oil-csf .csf-field-heading .csf-title {
+	font-size: 0.78rem;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: var(--so-admin-muted);
+	font-weight: 700;
+	border-bottom: 1px solid var(--so-admin-border);
+	padding-bottom: 0.5rem;
+	margin-bottom: 0.25rem;
+}
+
+.syria-oil-csf .csf-title h4 {
+	font-size: 0.95rem;
+	font-weight: 600;
+	color: var(--so-admin-ink);
+}
+
+.syria-oil-csf .csf-fieldset .csf-field {
+	border: 0;
+	box-shadow: none;
+	padding: 0.5rem 0;
+	margin: 0;
+	background: transparent;
+}
+
+.syria-oil-csf .csf-footer {
+	background: var(--so-admin-surface);
+	border-top: 1px solid var(--so-admin-border);
+	padding: 1rem 1.5rem;
+}
+
+.syria-oil-csf .csf-buttons .button-primary {
+	background: var(--so-admin-primary);
+	border-color: var(--so-admin-primary-dark);
+	border-radius: 8px;
+	padding: 0.35rem 1.25rem;
+	font-weight: 600;
+}
+
+.syria-oil-csf .csf-buttons .button-primary:hover {
+	background: var(--so-admin-primary-dark);
+	border-color: var(--so-admin-primary-dark);
+}
+
+.syria-oil-csf .csf-search input {
+	border-radius: 8px;
+}
+
+/* Sticky live previews on wide screens */
+@media (min-width: 1200px) {
+	.syria-oil-csf .csf-field-callback:has(.so-preview) {
+		position: sticky;
+		top: 48px;
+		z-index: 2;
+	}
+}
+
+/* Dashboard */
+.so-admin-dashboard {
+	--so-dash-primary: #007a3d;
+}
+
+.so-admin-dashboard__hero {
+	display: grid;
+	grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.8fr);
+	gap: 1.25rem;
+	padding: 1.35rem 1.5rem;
+	border-radius: var(--so-admin-radius, 12px);
+	background: linear-gradient(135deg, color-mix(in srgb, var(--so-dash-primary) 88%, #000) 0%, var(--so-dash-primary) 100%);
+	color: #fff;
+	margin-bottom: 1rem;
+	box-shadow: var(--so-admin-shadow, 0 8px 24px rgba(15, 20, 25, 0.12));
+}
+
+.so-admin-dashboard__eyebrow {
+	margin: 0 0 0.35rem;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	opacity: 0.85;
+	font-weight: 600;
+}
+
+.so-admin-dashboard__title {
+	margin: 0 0 0.5rem;
+	font-size: 1.35rem;
+	font-weight: 700;
+	line-height: 1.3;
+	letter-spacing: -0.02em;
+}
+
+.so-admin-dashboard__lead {
+	margin: 0 0 1rem;
+	max-width: 42rem;
+	line-height: 1.6;
+	opacity: 0.92;
+	font-size: 13px;
+}
+
+.so-admin-dashboard__actions .button-hero {
+	border-radius: 8px;
+	font-weight: 600;
+}
+
+.so-admin-dashboard__hero-art {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.so-admin-dashboard__hero-card {
+	width: 100%;
+	max-width: 200px;
+	aspect-ratio: 4 / 3;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.12);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	padding: 0.75rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.45rem;
+}
+
+.so-admin-dashboard__hero-card span {
+	display: block;
+	border-radius: 4px;
+	background: rgba(255, 255, 255, 0.22);
+}
+
+.so-admin-dashboard__hero-card span:first-child {
+	height: 42%;
+}
+
+.so-admin-dashboard__hero-card span:nth-child(2) {
+	height: 18%;
+	width: 70%;
+}
+
+.so-admin-dashboard__hero-card span:nth-child(3) {
+	flex: 1;
+}
+
+.so-admin-dashboard__grid {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 0.75rem;
+	margin-bottom: 1rem;
+}
+
+.so-admin-dashboard__chip {
+	background: #fff;
+	border: 1px solid var(--so-admin-border, #e2e8f0);
+	border-radius: 10px;
+	padding: 0.85rem 1rem;
+	box-shadow: 0 1px 2px rgba(15, 20, 25, 0.04);
+}
+
+.so-admin-dashboard__chip-label {
+	display: block;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--so-admin-muted, #5c6b7a);
+	margin-bottom: 0.35rem;
+	font-weight: 600;
+}
+
+.so-admin-dashboard__chip-value {
+	display: flex;
+	align-items: center;
+	gap: 0.45rem;
+	font-weight: 600;
+	font-size: 13px;
+	color: var(--so-admin-ink, #0f1419);
+}
+
+.so-admin-dashboard__chip-swatch {
+	width: 14px;
+	height: 14px;
+	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	flex: 0 0 auto;
+}
+
+.so-admin-dashboard__links {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 0.65rem;
+}
+
+.so-admin-dashboard__link {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.75rem 0.9rem;
+	background: #fff;
+	border: 1px solid var(--so-admin-border, #e2e8f0);
+	border-radius: 10px;
+	text-decoration: none;
+	color: var(--so-admin-ink, #0f1419);
+	font-weight: 500;
+	font-size: 13px;
+	transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.so-admin-dashboard__link:hover {
+	border-color: color-mix(in srgb, var(--so-dash-primary) 40%, #e2e8f0);
+	box-shadow: 0 2px 8px rgba(15, 20, 25, 0.06);
+	color: var(--so-dash-primary);
+}
+
+.so-admin-dashboard__link .dashicons {
+	color: var(--so-dash-primary);
+	font-size: 18px;
+	width: 18px;
+	height: 18px;
+}
+
+@media (max-width: 1200px) {
+	.so-admin-dashboard__grid,
+	.so-admin-dashboard__links {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 782px) {
+	.so-admin-dashboard__hero {
+		grid-template-columns: 1fr;
+	}
+
+	.so-admin-dashboard__grid,
+	.so-admin-dashboard__links {
+		grid-template-columns: 1fr;
+	}
+
+	.syria-oil-csf .csf-nav {
+		border-inline-end: 0;
+		border-bottom: 1px solid var(--so-admin-border);
+	}
+}
+
+/* RTL admin (Syria Oil options screen) */
+.so-admin-rtl.syria-oil-csf .csf-nav ul li .csf-active {
+	box-shadow: inset -3px 0 0 var(--so-admin-primary);
+}
+
+.so-admin-rtl .so-preview__article-card {
+	border-inline-start: 0;
+	border-inline-end: 4px solid var(--preview-primary, #007a3d);
+}
+
+.so-admin-rtl .so-preview__banner-edge {
+	inset-inline-start: auto;
+	inset-inline-end: 0;
+}
+
+.so-admin-rtl .so-preview__banner-body {
+	padding-inline: 1.35rem 1rem;
+}
+
+.so-admin-rtl .so-preview__banner-emblem {
+	inset-inline-end: auto;
+	inset-inline-start: 0.75rem;
+}
+
+.so-admin-rtl .so-admin-dashboard__actions .button + .button {
+	margin-inline-start: 0.35rem;
+}

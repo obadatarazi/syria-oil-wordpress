@@ -1,0 +1,20 @@
+{
+  "version": "0.4",
+  "title": "Syria Oil — Price Ticker",
+  "type": "widget",
+  "content": [
+    {
+      "id": "sowPresetPriceTicker",
+      "elType": "widget",
+      "widgetType": "syria_oil_price_ticker",
+      "settings": {
+        "commodities": ["brent", "wti", "natgas"],
+        "show_change": "yes",
+        "show_updated": "yes",
+        "layout": "ticker",
+        "speed": { "size": 30 },
+        "pause_on_hover": "yes"
+      }
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "version": "0.5",
+  "title": "Syria Oil — about",
+  "type": "page",
+  "content": [
+    {
+      "id": "c00aa72",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "ba9cef8",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "2d9cefb",
+              "elType": "widget",
+              "widgetType": "syria_oil_page_hero",
+              "settings": {
+                "title": "من نحن",
+                "subtitle": "منصة سيريا أويل الإخبارية المتخصصة في النفط والغاز.",
+                "show_breadcrumb": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b5c9bd6",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "3192da9",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "696d8e7",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"about-intro grid-2\">\n  <article class=\"card about-panel\"><div class=\"card-body\">\n    <h2>من نحن</h2>\n    <p class=\"text-muted\">سيريا أويل منصة إخبارية مستقلة متخصصة في تغطية قطاع النفط والغاز في سوريا والعالم. نقدم أخباراً وتحليلات وتقارير ميدانية للجمهور والمتخصصين والمستثمرين.</p>\n  </div></article>\n  <article class=\"card about-panel\"><div class=\"card-body\">\n    <h2>رسالتنا</h2>\n    <p class=\"text-muted\">توفير تغطية موثوقة وشفافة لأسواق الطاقة، والشركات العاملة، والمحروقات، والقرارات الرسمية المرتبطة بالقطاع — بلغة واضحة ومحتوى قابل للتحقق.</p>\n  </div></article>\n</div>\n<div class=\"grid-3 about-values\">\n  <div class=\"overview-card\"><div class=\"icon\" aria-hidden=\"true\">01</div><h3>الدقة</h3><p>مراجعة المصادر والتحقق قبل النشر.</p></div>\n  <div class=\"overview-card\"><div class=\"icon\" aria-hidden=\"true\">02</div><h3>الشفافية</h3><p>سياسة خصوصية واضحة وروابط تواصل مباشرة.</p></div>\n  <div class=\"overview-card\"><div class=\"icon\" aria-hidden=\"true\">03</div><h3>التخصص</h3><p>تركيز كامل على النفط والغاز والطاقة ذات الصلة.</p></div>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0bcdf6d",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "4b08729",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "69a6f7a",
+              "elType": "widget",
+              "widgetType": "syria_oil_contact_cta",
+              "settings": {}
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {}
+}

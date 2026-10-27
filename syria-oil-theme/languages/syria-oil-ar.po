@@ -1,0 +1,209 @@
+# Copyright (C) 2026 Syria Oil
+# This file is distributed under the same license as the Syria Oil theme.
+msgid ""
+msgstr ""
+"Project-Id-Version: Syria Oil 1.2.0\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Domain: syria-oil\n"
+
+msgid "Skip to content"
+msgstr "تخطي إلى المحتوى"
+
+msgid "Search the news…"
+msgstr "ابحث في الأخبار…"
+
+msgid "Search the news"
+msgstr "ابحث في الأخبار"
+
+msgid "Search"
+msgstr "بحث"
+
+msgid "Search for:"
+msgstr "بحث عن:"
+
+msgid "Open menu"
+msgstr "فتح القائمة"
+
+msgid "Close menu"
+msgstr "إغلاق القائمة"
+
+msgid "Primary menu"
+msgstr "القائمة الرئيسية"
+
+msgid "Open submenu"
+msgstr "فتح القائمة الفرعية"
+
+msgid "Ad space"
+msgstr "مساحة إعلانية"
+
+msgid "Premium advertisements"
+msgstr "إعلانات مميزة"
+
+msgid "Advertisements"
+msgstr "إعلانات"
+
+msgid "More advertisements"
+msgstr "المزيد من الإعلانات"
+
+msgid "Explore"
+msgstr "استكشف"
+
+msgid "Categories"
+msgstr "التصنيفات"
+
+msgid "Contact"
+msgstr "اتصل بنا"
+
+msgid "Contact us"
+msgstr "تواصل معنا"
+
+msgid "About the portal"
+msgstr "عن الموقع"
+
+msgid "Mobile navigation"
+msgstr "تنقل سريع"
+
+msgid "Menu"
+msgstr "المزيد"
+
+msgid "More"
+msgstr "المزيد"
+
+msgid "Read the story"
+msgstr "اقرأ التفاصيل"
+
+msgid "Latest news"
+msgstr "آخر الأخبار"
+
+msgid "Latest News"
+msgstr "آخر الأخبار"
+
+msgid "The newest coverage from across the Syrian oil & gas sector."
+msgstr "أحدث التغطيات من قطاع النفط والغاز السوري."
+
+msgid "Newsroom"
+msgstr "المركز الإعلامي"
+
+msgid "All news"
+msgstr "كل الأخبار"
+
+msgid "Read more"
+msgstr "اقرأ المزيد"
+
+msgid "Home"
+msgstr "الرئيسية"
+
+msgid "Sitemap"
+msgstr "خريطة الموقع"
+
+msgid "Search results"
+msgstr "نتائج البحث"
+
+msgid "Breadcrumb"
+msgstr "مسار التصفح"
+
+msgid "Page not found"
+msgstr "الصفحة غير موجودة"
+
+msgid "The page you were looking for could not be found. It may have moved or no longer exists."
+msgstr "تعذر العثور على الصفحة المطلوبة. ربما نُقلت أو لم تعد موجودة."
+
+msgid "Back to home"
+msgstr "العودة للرئيسية"
+
+msgid "Previous"
+msgstr "السابق"
+
+msgid "Next"
+msgstr "التالي"
+
+msgid "Pages:"
+msgstr "الصفحات:"
+
+msgid "Article sidebar"
+msgstr "شريط المقال"
+
+msgid "Recent news"
+msgstr "أحدث الأخبار"
+
+msgid "Social links"
+msgstr "روابط التواصل"
+
+msgid "Primary Menu"
+msgstr "القائمة الرئيسية"
+
+msgid "Footer Menu"
+msgstr "قائمة التذييل"
+
+msgid "Mobile Bottom Bar"
+msgstr "شريط الجوال السفلي"
+
+msgid "&laquo; Previous"
+msgstr "&laquo; السابق"
+
+msgid "Next &raquo;"
+msgstr "التالي &raquo;"
+
+msgid "Leave a comment"
+msgstr "اترك تعليقاً"
+
+msgid "Comments are closed."
+msgstr "التعليقات مغلقة."
+
+msgid "Featured News Slider"
+msgstr "شريط الأخبار المميزة"
+
+msgid "Article Card Grid"
+msgstr "شبكة بطاقات المقالات"
+
+msgid "No posts match this query yet."
+msgstr "لا توجد مقالات مطابقة بعد."
+
+msgid "No slides found. Add posts or manual slides."
+msgstr "لا توجد شرائح. أضف مقالات أو شرائح يدوية."
+
+msgid "Previous slide"
+msgstr "الشريحة السابقة"
+
+msgid "Next slide"
+msgstr "الشريحة التالية"
+
+msgid "Slides"
+msgstr "الشرائح"
+
+msgid "Go to slide %d"
+msgstr "الانتقال إلى الشريحة %d"
+
+msgid "Syria Oil — Default Demo"
+msgstr "سوريا أويل — العرض التجريبي"
+
+msgid "After import, set the front page and menus under Settings → Reading and Appearance → Menus. Elementor templates are in demos/elementor/."
+msgstr "بعد الاستيراد، عيّن الصفحة الرئيسية والقوائم من الإعدادات ← القراءة والمظهر ← القوائم. قوالب Elementor في demos/elementor/."
+
+msgid "Syria Oil starter content installed: Arabic pages, sample posts, and Primary / Footer / Mobile menus are ready. Customize them under Appearance → Menus and Customize → Syria Oil Site Settings."
+msgstr "تم تثبيت محتوى البداية لسوريا أويل: صفحات عربية ومقالات تجريبية وقوائم رئيسية/تذييل/جوال جاهزة. عدّلها من المظهر ← القوائم ومن التخصيص ← إعدادات سوريا أويل."
+
+msgid "Syria Oil Starter"
+msgstr "محتوى بداية سوريا أويل"
+
+msgid "Creates Arabic starter pages, sample news posts, and assigns Primary / Footer / Mobile menus automatically."
+msgstr "ينشئ صفحات عربية ومقالات تجريبية ويعين قوائم الرئيسية والتذييل والجوال تلقائياً."
+
+msgid "Done. New pages: %1$d · New posts: %2$d · Menus assigned: %3$d"
+msgstr "تم. صفحات جديدة: %1$d · مقالات جديدة: %2$d · قوائم معينة: %3$d"
+
+msgid "Install / refresh starter content"
+msgstr "تثبيت / تحديث محتوى البداية"
+
+msgid "Safe to run again: pages are updated, menus are rebuilt, and sample posts are added when missing."
+msgstr "آمن للتشغيل مجدداً: تُحدَّث الصفحات وتُعاد بناء القوائم وتُضاف المقالات عند الحاجة."
+
+msgid "Imports starter pages and posts. Menus and Customizer defaults are applied automatically after import. Tip: you can also use Tools → Syria Oil Starter."
+msgstr "يستورد صفحات ومقالات البداية. تُطبَّق القوائم وإعدادات التخصيص تلقائياً بعد الاستيراد. يمكنك أيضاً استخدام أدوات ← محتوى بداية سوريا أويل."
+
+msgid "Home page for the news portal. Build it with Elementor (Featured News Slider + Article Card Grid)."
+msgstr "الصفحة الرئيسية لبوابة الأخبار. ابنِها بـ Elementor (شريط الأخبار المميزة + شبكة المقالات)."

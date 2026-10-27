@@ -1,0 +1,116 @@
+{
+  "version": "0.4",
+  "title": "المناقصات والمشتريات",
+  "type": "page",
+  "content": [
+    {
+      "id": "a9b7789",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "23b8386",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "fc730a4",
+              "elType": "widget",
+              "widgetType": "syria_oil_page_hero",
+              "settings": {
+                "title": "المناقصات والمشتريات",
+                "subtitle": "مناقصات منشورة بشفافية مع وثائق الشروط.",
+                "show_breadcrumb": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dc1afc6",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "ae64b2a",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "2d852f4",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"table-wrap\">\n<table class=\"data\">\n<thead><tr><th>الرقم</th><th>العنوان</th><th>الإغلاق</th><th>الحالة</th><th></th></tr></thead>\n<tbody>\n<tr><td>T-2026-118</td><td>تأهيل مقاطع خطوط أنابيب</td><td>2026-08-20</td><td><span class=\"badge-status\">مفتوحة</span></td><td><a class=\"btn btn-secondary btn-sm\" href=\"downloads.html\">الوثائق</a></td></tr>\n<tr><td>T-2026-121</td><td>توريد معدات سلامة</td><td>2026-08-05</td><td><span class=\"badge-status\">مفتوحة</span></td><td><a class=\"btn btn-secondary btn-sm\" href=\"downloads.html\">الوثائق</a></td></tr>\n<tr><td>T-2026-097</td><td>خدمات مسح زلزالي</td><td>2026-07-01</td><td><span class=\"badge-status warn\">مغلقة</span></td><td><a class=\"btn btn-secondary btn-sm\" href=\"#\">الأرشيف</a></td></tr>\n<tr><td>T-2026-102</td><td>تطوير منصة بيانات</td><td>2026-08-28</td><td><span class=\"badge-status info\">توضيحات</span></td><td><a class=\"btn btn-secondary btn-sm\" href=\"downloads.html\">الوثائق</a></td></tr>\n</tbody>\n</table>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1b8616f",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "108933c",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "2416b1e",
+              "elType": "widget",
+              "widgetType": "syria_oil_ad_banner",
+              "settings": {
+                "layout": "grid"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6bfe9bd",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "de40dfd",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "2a493bc",
+              "elType": "widget",
+              "widgetType": "syria_oil_contact_cta",
+              "settings": {}
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

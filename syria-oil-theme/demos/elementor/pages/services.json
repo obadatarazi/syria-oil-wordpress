@@ -1,0 +1,78 @@
+{
+  "version": "0.4",
+  "title": "الأقسام",
+  "type": "page",
+  "content": [
+    {
+      "id": "26fab61",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "18f0d05",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "793fa8b",
+              "elType": "widget",
+              "widgetType": "syria_oil_page_hero",
+              "settings": {
+                "title": "الأقسام",
+                "subtitle": "صفِّ الأخبار حسب التصنيف عبر البطاقات والوسوم، ثم اقرأ التفاصيل.",
+                "show_breadcrumb": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "047d159",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "extended",
+        "padding": {
+          "unit": "px",
+          "top": "40",
+          "right": "0",
+          "bottom": "48",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "1f3799a",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "b00ab30",
+              "elType": "widget",
+              "widgetType": "syria_oil_posts_filter",
+              "settings": {
+                "heading": "تصفح حسب التصنيف",
+                "show_featured": "yes",
+                "featured_count": 4,
+                "show_chips": "yes",
+                "chip_limit": 18,
+                "posts_per_page": 9,
+                "empty_text": "لا توجد مقالات في هذا التصنيف حالياً."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

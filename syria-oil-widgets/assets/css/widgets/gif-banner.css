@@ -1,0 +1,81 @@
+/* GIF Banner — keeps animation (original file URL), full Elementor style hooks */
+
+.sow-gif {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sow-gif__link {
+  display: flex;
+  flex-direction: column;
+  align-items: inherit;
+  justify-content: inherit;
+  width: 100%;
+  max-width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.sow-gif__frame {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-inline: auto;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.sow-gif__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.sow-gif__caption {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--color-muted, #64748b);
+}
+
+.sow-gif--empty {
+  padding: 1.25rem;
+  text-align: center;
+  border: 1px dashed var(--color-border, #e2e8f0);
+  border-radius: 12px;
+  color: var(--color-muted, #64748b);
+  background: var(--color-surface, #fff);
+}
+
+@media (max-width: 767px) {
+  .sow-gif--bleed-mobile {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-inline: calc(50% - 50vw) !important;
+    border-radius: 0 !important;
+  }
+  .sow-gif--bleed-mobile .sow-gif__frame,
+  .sow-gif--bleed-mobile .sow-gif__img {
+    border-radius: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sow-gif__img,
+  .sow-gif__frame {
+    transition: none !important;
+  }
+  .sow-gif:hover .sow-gif__img {
+    transform: none !important;
+  }
+}

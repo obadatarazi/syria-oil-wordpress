@@ -1,0 +1,73 @@
+{
+  "version": "0.4",
+  "title": "Syria Oil — Hero Slider",
+  "type": "widget",
+  "content": [
+    {
+      "id": "sowPresetSlider",
+      "elType": "widget",
+      "widgetType": "syria_oil_featured_news_slider",
+      "settings": {
+        "source": "manual",
+        "autoplay": "yes",
+        "autoplay_delay": 6000,
+        "show_arrows": "yes",
+        "show_dots": "yes",
+        "slides": [
+          {
+            "image": {
+              "url": "https://www.syria-oil.com/wp-content/uploads/image/IMG-20260730-WA0089-scaled.jpg"
+            },
+            "kicker": "أخبار بارزة",
+            "title": "بخبرة تتجاوز 30 عاماً واكتشافات عالمية.. “آسبيكت إنرجي” الأمريكية تدرس دخول السوق السورية وتطوير حقول النفط والغاز",
+            "excerpt": "في خطوة تعكس عودة اهتمام شركات الطاقة الدولية بالسوق السورية، أبدت شركة “آسبيكت إنرجي” الأمريكية اهتماماً جدياً بدراسة الفرص الاستثمارية والدخول إلى قطاع النفط والغاز في سوريا.",
+            "cta_text": "اقرأ التفاصيل",
+            "link": {
+              "url": "https://www.syria-oil.com/20577/",
+              "is_external": "on"
+            }
+          },
+          {
+            "image": {
+              "url": "https://www.syria-oil.com/wp-content/uploads/image/FB_IMG_1785151142379.jpg"
+            },
+            "kicker": "المحروقات",
+            "title": "سوريا تستورد شحنتي مازوت وغاز منزلي بإجمالي يقترب من مليون برميل.. وبدء التفريغ خلال ساعات",
+            "excerpt": "استقبل مصب بانياس البحري ناقلة مازوت وناقلة غاز مسال في إطار استمرار تأمين احتياجات السوق المحلية من المشتقات النفطية.",
+            "cta_text": "اقرأ التفاصيل",
+            "link": {
+              "url": "https://www.syria-oil.com/20573/",
+              "is_external": "on"
+            }
+          },
+          {
+            "image": {
+              "url": "https://www.syria-oil.com/wp-content/uploads/image/IMG_20260718_093125_314-scaled.jpg"
+            },
+            "kicker": "تصريحات",
+            "title": "قبلاوي: مذكرتا التفاهم خطوة جديدة نحو تعزيز التكامل الإقليمي في قطاع الطاقة",
+            "excerpt": "إحياء خط الحديثة – بانياس ليس مجرد نقل نفط، بل مشروع استراتيجي يعيد رسم خريطة التعاون الإقليمي في الطاقة.",
+            "cta_text": "اقرأ التفاصيل",
+            "link": {
+              "url": "https://www.syria-oil.com/20569/",
+              "is_external": "on"
+            }
+          },
+          {
+            "image": {
+              "url": "https://www.syria-oil.com/wp-content/uploads/image/IMG_20260718_000529_522.jpg"
+            },
+            "kicker": "أخبار بارزة",
+            "title": "سوريا توقّع مذكرتي تفاهم لإحياء مشروع خط الحديثة – بانياس بالشراكة مع العراق وائتلاف شركات دولي",
+            "excerpt": "توقيع مذكرة تفاهم لتأهيل وإعادة إحياء خط نقل النفط الحديثة – بانياس بالشراكة مع العراق وائتلاف شركات دولي.",
+            "cta_text": "اقرأ التفاصيل",
+            "link": {
+              "url": "https://www.syria-oil.com/20565/",
+              "is_external": "on"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

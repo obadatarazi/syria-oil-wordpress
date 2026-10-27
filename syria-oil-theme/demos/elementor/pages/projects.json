@@ -1,0 +1,77 @@
+{
+  "version": "0.4",
+  "title": "المشاريع",
+  "type": "page",
+  "content": [
+    {
+      "id": "878df97",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "f3035ec",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "a6d002c",
+              "elType": "widget",
+              "widgetType": "syria_oil_page_hero",
+              "settings": {
+                "title": "المشاريع والأخبار",
+                "subtitle": "تصفية سريعة حسب التصنيف لعرض المشاريع والأخبار المرتبطة.",
+                "show_breadcrumb": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8775806",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "extended",
+        "padding": {
+          "unit": "px",
+          "top": "36",
+          "right": "0",
+          "bottom": "48",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "f6ac54a",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "e109c21",
+              "elType": "widget",
+              "widgetType": "syria_oil_posts_filter",
+              "settings": {
+                "heading": "المشاريع حسب التصنيف",
+                "show_featured": "yes",
+                "featured_count": 4,
+                "show_chips": "yes",
+                "chip_limit": 16,
+                "posts_per_page": 9
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

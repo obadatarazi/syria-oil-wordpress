@@ -1,0 +1,89 @@
+{
+  "version": "0.4",
+  "title": "مركز التحميل",
+  "type": "page",
+  "content": [
+    {
+      "id": "f849267",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "da2bed9",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "977d6d8",
+              "elType": "widget",
+              "widgetType": "syria_oil_page_hero",
+              "settings": {
+                "title": "مركز التحميل",
+                "subtitle": "تقارير، سياسات، نماذج PDF/Word/Excel مع بحث وفلاتر.",
+                "show_breadcrumb": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d13a384",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "766ce75",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "f504bb3",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"portal-downloads\">\n<div class=\"card\" style=\"margin-bottom:1rem\"><div class=\"card-body\" style=\"display:flex;justify-content:space-between;gap:1rem;align-items:center;flex-wrap:wrap\">\n  <div><h3 style=\"margin:0 0 .35rem\">أرشيف التقارير</h3><p class=\"text-muted\" style=\"margin:0;font-size:.85rem\"></p></div>\n  <a class=\"btn btn-secondary btn-sm\" href=\"https://www.syria-oil.com/category/%d8%aa%d9%82%d8%a7%d8%b1%d9%8a%d8%b1/\" target=\"_blank\" rel=\"noopener noreferrer\">فتح</a>\n</div></div>\n\n<div class=\"card\" style=\"margin-bottom:1rem\"><div class=\"card-body\" style=\"display:flex;justify-content:space-between;gap:1rem;align-items:center;flex-wrap:wrap\">\n  <div><h3 style=\"margin:0 0 .35rem\">أخبار المشاريع النفطية</h3><p class=\"text-muted\" style=\"margin:0;font-size:.85rem\"></p></div>\n  <a class=\"btn btn-secondary btn-sm\" href=\"https://www.syria-oil.com/category/%d8%a3%d8%ae%d8%a8%d8%a7%d8%b1-%d8%a7%d9%84%d9%85%d8%b4%d8%a7%d8%b1%d9%8a%d8%b9-%d8%a7%d9%84%d9%86%d9%81%d8%b7%d9%8a%d8%a9/\" target=\"_blank\" rel=\"noopener noreferrer\">فتح</a>\n</div></div>\n\n<div class=\"card\" style=\"margin-bottom:1rem\"><div class=\"card-body\" style=\"display:flex;justify-content:space-between;gap:1rem;align-items:center;flex-wrap:wrap\">\n  <div><h3 style=\"margin:0 0 .35rem\">أخبار بارزة</h3><p class=\"text-muted\" style=\"margin:0;font-size:.85rem\"></p></div>\n  <a class=\"btn btn-secondary btn-sm\" href=\"https://www.syria-oil.com/category/%d8%a3%d8%ae%d8%a8%d8%a7%d8%b1-%d8%a8%d8%a7%d8%b1%d8%b2%d8%a9/\" target=\"_blank\" rel=\"noopener noreferrer\">فتح</a>\n</div></div>\n\n<div class=\"card\" style=\"margin-bottom:1rem\"><div class=\"card-body\" style=\"display:flex;justify-content:space-between;gap:1rem;align-items:center;flex-wrap:wrap\">\n  <div><h3 style=\"margin:0 0 .35rem\">مقالات</h3><p class=\"text-muted\" style=\"margin:0;font-size:.85rem\"></p></div>\n  <a class=\"btn btn-secondary btn-sm\" href=\"https://www.syria-oil.com/category/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/\" target=\"_blank\" rel=\"noopener noreferrer\">فتح</a>\n</div></div>\n\n<div class=\"card\" style=\"margin-bottom:1rem\"><div class=\"card-body\" style=\"display:flex;justify-content:space-between;gap:1rem;align-items:center;flex-wrap:wrap\">\n  <div><h3 style=\"margin:0 0 .35rem\">English section</h3><p class=\"text-muted\" style=\"margin:0;font-size:.85rem\"></p></div>\n  <a class=\"btn btn-secondary btn-sm\" href=\"https://www.syria-oil.com/english/\" target=\"_blank\" rel=\"noopener noreferrer\">فتح</a>\n</div></div></div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5316d79",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "1d7dd51",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "e65ce51",
+              "elType": "widget",
+              "widgetType": "syria_oil_contact_cta",
+              "settings": {}
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

@@ -1,0 +1,132 @@
+{
+  "version": "0.4",
+  "title": "Syria Oil — Single Post",
+  "type": "single-post",
+  "content": [
+    {
+      "id": "448f041",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default",
+        "background_background": "classic",
+        "background_color": "#0f1419",
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "bottom": "48",
+          "left": "24",
+          "right": "24",
+          "isLinked": false
+        },
+        "css_classes": "so-banner"
+      },
+      "elements": [
+        {
+          "id": "4d3f159",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "e4683dc",
+              "elType": "widget",
+              "widgetType": "theme-post-title",
+              "settings": {
+                "header_size": "h1",
+                "align": "right"
+              }
+            },
+            {
+              "id": "be9cc32",
+              "elType": "widget",
+              "widgetType": "theme-post-info",
+              "settings": {
+                "show_date": "yes",
+                "show_author": "yes",
+                "show_categories": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90dddcc",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "bd99ab3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 66
+          },
+          "elements": [
+            {
+              "id": "4649b89",
+              "elType": "widget",
+              "widgetType": "theme-post-featured-image",
+              "settings": {
+                "image_size": "large"
+              }
+            },
+            {
+              "id": "14923a3",
+              "elType": "widget",
+              "widgetType": "theme-post-content",
+              "settings": {}
+            },
+            {
+              "id": "5445dcd",
+              "elType": "widget",
+              "widgetType": "post-navigation",
+              "settings": {
+                "show_label": "yes",
+                "prev_label": "السابق",
+                "next_label": "التالي"
+              }
+            }
+          ]
+        },
+        {
+          "id": "4dae1d4",
+          "elType": "column",
+          "settings": {
+            "_column_size": 34
+          },
+          "elements": [
+            {
+              "id": "1365432",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "آخر الأخبار",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "1add3ac",
+              "elType": "widget",
+              "widgetType": "syria_oil_article_card_grid",
+              "settings": {
+                "show_header": "no",
+                "query_posts_per_page": 4,
+                "show_more": "yes",
+                "read_more_text": "اقرأ المزيد"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": [],
+  "conditions": [
+    "include/singular/post"
+  ]
+}

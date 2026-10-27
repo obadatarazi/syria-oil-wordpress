@@ -1,0 +1,36 @@
+/**
+ * Syria Oil Setup page styles.
+ */
+
+.syria-oil-setup-wrap {
+	max-width: 960px;
+}
+
+.syria-oil-setup-wrap h1 {
+	margin-bottom: 1.5rem;
+	color: #0f1419;
+	font-size: 2rem;
+}
+
+.syria-oil-setup-wrap .card {
+	border: 1px solid #e2e8f0;
+	box-shadow: 0 2px 8px rgba(15, 20, 25, 0.04);
+}
+
+.syria-oil-setup-wrap details > summary {
+	transition: background 0.2s ease;
+}
+
+.syria-oil-setup-wrap details > summary:hover {
+	background: #f1f5f9;
+}
+
+.syria-oil-setup-wrap details[open] > summary {
+	margin-bottom: 1rem;
+	border-radius: 6px 6px 0 0;
+}
+
+/* RTL adjustments */
+.rtl .syria-oil-setup-wrap details > summary {
+	text-align: right;
+}

@@ -1,0 +1,121 @@
+{
+  "version": "0.4",
+  "title": "القيادة",
+  "type": "page",
+  "content": [
+    {
+      "id": "6ac7e77",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "4a9b11b",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "1d4b986",
+              "elType": "widget",
+              "widgetType": "syria_oil_page_hero",
+              "settings": {
+                "title": "القيادة",
+                "subtitle": "الوزير ونواب الوزير والمديرون والفريق القيادي.",
+                "show_breadcrumb": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1fde4c1",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "2b8f809",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "722d838",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"grid-3\">\n  <article class=\"card reveal\"><div class=\"card-media\"><img src=\"https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80\" alt=\"\" referrerpolicy=\"no-referrer\"></div><div class=\"card-body\"><span class=\"badge\">الوزير</span><h3 style=\"margin:.75rem 0\">وزير النفط والثروة المعدنية</h3><p class=\"text-muted\" style=\"font-size:.9rem\">يشرف على السياسات القطاعية والحوكمة والاستثمار والعلاقات الدولية.</p></div></article>\n  <article class=\"card reveal\"><div class=\"card-media\"><img src=\"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80\" alt=\"\" referrerpolicy=\"no-referrer\"></div><div class=\"card-body\"><span class=\"badge\">نائب وزير</span><h3 style=\"margin:.75rem 0\">نائب الوزير لشؤون الإنتاج</h3><p class=\"text-muted\" style=\"font-size:.9rem\">يتابع الحقول والمصافي وكفاءة التشغيل والسلامة.</p></div></article>\n  <article class=\"card reveal\"><div class=\"card-media\"><img src=\"https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80\" alt=\"\" referrerpolicy=\"no-referrer\"></div><div class=\"card-body\"><span class=\"badge\">نائب وزير</span><h3 style=\"margin:.75rem 0\">نائب الوزير للتحول الرقمي</h3><p class=\"text-muted\" style=\"font-size:.9rem\">يقود المنصات الرقمية والبيانات المفتوحة وتجربة المستخدم.</p></div></article>\n  <article class=\"card reveal\"><div class=\"card-body\"><h3>مدير الاستكشاف</h3><p class=\"text-muted\" style=\"margin-top:.5rem;font-size:.9rem\">المسوحات، المربعات، والبيانات الجيولوجية.</p></div></article>\n  <article class=\"card reveal\"><div class=\"card-body\"><h3>مدير التراخيص</h3><p class=\"text-muted\" style=\"margin-top:.5rem;font-size:.9rem\">إجراءات التراخيص والامتثال التنظيمي.</p></div></article>\n  <article class=\"card reveal\"><div class=\"card-body\"><h3>مدير البيئة والسلامة</h3><p class=\"text-muted\" style=\"margin-top:.5rem;font-size:.9rem\">HSE والرصد البيئي وإدارة المخاطر.</p></div></article>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b69b0d3",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "62c2795",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "c536001",
+              "elType": "widget",
+              "widgetType": "syria_oil_minister_block",
+              "settings": {
+                "image": {
+                  "url": "https://www.syria-oil.com/wp-content/uploads/image/FB_IMG_1784053160755.jpg",
+                  "id": "",
+                  "alt": "",
+                  "source": "url"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "137e082",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "83f1ebe",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "82ee951",
+              "elType": "widget",
+              "widgetType": "syria_oil_contact_cta",
+              "settings": {}
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

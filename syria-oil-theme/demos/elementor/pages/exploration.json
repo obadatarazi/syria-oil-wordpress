@@ -1,0 +1,89 @@
+{
+  "version": "0.4",
+  "title": "الاستكشاف والحقول",
+  "type": "page",
+  "content": [
+    {
+      "id": "9dbbeaa",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "069c2b5",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "b283895",
+              "elType": "widget",
+              "widgetType": "syria_oil_page_hero",
+              "settings": {
+                "title": "الاستكشاف والحقول",
+                "subtitle": "المربعات البرية والبحرية، الحقول، والبيانات الجيولوجية.",
+                "show_breadcrumb": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "53745e0",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "c20a2c5",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "0390aa8",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"grid-2\" style=\"margin-bottom:2rem\">\n  <article class=\"card\"><div class=\"card-body\"><h3>الاستكشاف البري</h3><p class=\"text-muted\" style=\"margin-top:.75rem;line-height:1.8\">مربعات مفتوحة، متطلبات فنية، وجداول زمنية للتقديم.</p><a class=\"btn btn-secondary btn-sm\" style=\"margin-top:1rem\" href=\"services.html\">طلب استكشاف</a></div></article>\n  <article class=\"card\"><div class=\"card-body\"><h3>الاستكشاف البحري</h3><p class=\"text-muted\" style=\"margin-top:.75rem;line-height:1.8\">دراسات زلزالية وشراكات دولية وفق ضوابط وطنية.</p><a class=\"btn btn-secondary btn-sm\" style=\"margin-top:1rem\" href=\"investments.html\">فرص بحرية</a></div></article>\n</div>\n<div class=\"alert alert-success\">للحصول على حزم البيانات الجيولوجية استخدم خدمة «طلب بيانات جيولوجية» بعد توقيع اتفاقية الاستخدام.</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa4b3a6",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "11b6193",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "3fc3f6a",
+              "elType": "widget",
+              "widgetType": "syria_oil_contact_cta",
+              "settings": {}
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

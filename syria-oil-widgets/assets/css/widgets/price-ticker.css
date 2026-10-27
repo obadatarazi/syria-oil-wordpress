@@ -1,0 +1,116 @@
+.sow-prices {
+  font-size: 0.875rem;
+  overflow: hidden;
+}
+
+.sow-prices--placeholder {
+  padding: 0.75rem 1rem;
+  background: #f7f9fb;
+  color: #0f1419;
+  border-block: 1px solid #e2e8f0;
+}
+
+.sow-prices__placeholder {
+  margin: 0;
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+.sow-prices__hint {
+  margin: 0.35rem 0 0;
+  font-size: 0.8em;
+  opacity: 0.75;
+}
+
+.sow-prices__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0.85rem;
+  gap: 1.5rem;
+}
+
+.sow-prices--ticker .sow-prices__list {
+  flex-wrap: nowrap;
+  width: max-content;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.sow-prices__track-wrap {
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.sow-prices__track {
+  animation: sow-prices-scroll var(--sow-prices-duration, 30s) linear infinite;
+}
+
+.sow-prices.is-paused .sow-prices__track {
+  animation-play-state: paused;
+}
+
+html[dir="rtl"] .sow-prices__track {
+  animation-name: sow-prices-scroll-rtl;
+}
+
+.sow-prices__item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  white-space: nowrap;
+}
+
+.sow-prices__name {
+  font-weight: 700;
+  opacity: 0.95;
+}
+
+.sow-prices__value {
+  opacity: 0.9;
+  direction: ltr;
+  unicode-bidi: isolate;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}
+
+.sow-prices__change {
+  font-size: 0.85em;
+  direction: ltr;
+  unicode-bidi: isolate;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}
+
+.sow-prices__updated {
+  margin: 0;
+  padding: 0 0.85rem 0.5rem;
+  font-size: 0.75em;
+  opacity: 0.65;
+}
+
+@keyframes sow-prices-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes sow-prices-scroll-rtl {
+  from { transform: translateX(0); }
+  to { transform: translateX(50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sow-prices__track {
+    animation: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .sow-prices--static .sow-prices__list {
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+  }
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  Syria Oil — starter demo content (WXR).
+  Minimal, valid placeholder so One Click Demo Import shows the package and
+  creates the core pages/menus. Replace with a full export from a production
+  site via Tools -> Export for a complete demo.
+-->
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+	<title>Syria Oil Demo</title>
+	<link>https://www.syria-oil.com/</link>
+	<description>Starter demo content for the Syria Oil theme</description>
+	<language>ar</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>https://www.syria-oil.com/</wp:base_site_url>
+	<wp:base_blog_url>https://www.syria-oil.com/</wp:base_blog_url>
+
+	<wp:author>
+		<wp:author_id>1</wp:author_id>
+		<wp:author_login><![CDATA[admin]]></wp:author_login>
+		<wp:author_email><![CDATA[admin@example.com]]></wp:author_email>
+		<wp:author_display_name><![CDATA[Editorial]]></wp:author_display_name>
+	</wp:author>
+
+	<wp:category>
+		<wp:term_id>10</wp:term_id>
+		<wp:category_nicename><![CDATA[featured-news]]></wp:category_nicename>
+		<wp:cat_name><![CDATA[Featured News]]></wp:cat_name>
+	</wp:category>
+
+	<!-- Home page (intended as the static front page). -->
+	<item>
+		<title><![CDATA[Home]]></title>
+		<link>https://www.syria-oil.com/home/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- Build this page with Elementor: add a Featured News Slider then an Article Card Grid. -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>2001</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[home]]></wp:post_name>
+	</item>
+
+	<!-- News page (intended as the posts page). -->
+	<item>
+		<title><![CDATA[News]]></title>
+		<link>https://www.syria-oil.com/news/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>2002</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:05:00]]></wp:post_date>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[news]]></wp:post_name>
+	</item>
+
+	<!-- Sample post so grids/sliders have content immediately. -->
+	<item>
+		<title><![CDATA[Welcome to the Syria Oil news portal]]></title>
+		<link>https://www.syria-oil.com/welcome/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<p>This is a sample article. Replace it with real coverage from the Syrian oil &amp; gas sector.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[A sample article to seed the homepage grids and slider.]]></excerpt:encoded>
+		<wp:post_id>2003</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-02 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[welcome]]></wp:post_name>
+		<category domain="category" nicename="featured-news"><![CDATA[Featured News]]></category>
+	</item>
+</channel>
+</rss>

@@ -1,0 +1,54 @@
+.sow-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.sow-accordion-item {
+  background: #fff;
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.sow-accordion-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  background: transparent;
+  border: 0;
+  text-align: start;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--color-ink, #0f1419);
+}
+.sow-accordion-btn > span:first-child {
+  flex: 1;
+  text-align: start;
+}
+.sow-accordion-btn .icon {
+  flex: 0 0 auto;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary-soft, #e6f5ec);
+  color: var(--color-primary, #007a3d);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.sow-accordion-item.is-open .sow-accordion-btn .icon {
+  background: var(--color-primary, #007a3d);
+  color: #fff;
+}
+.sow-accordion-panel {
+  padding: 0 1.1rem 1.1rem;
+  color: var(--color-muted, #64748b);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: start;
+}

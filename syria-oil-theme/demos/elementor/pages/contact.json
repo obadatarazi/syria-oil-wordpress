@@ -1,0 +1,92 @@
+{
+  "version": "0.4",
+  "title": "اتصل بنا",
+  "type": "page",
+  "content": [
+    {
+      "id": "6892a7d",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "9a57c78",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "60c16c8",
+              "elType": "widget",
+              "widgetType": "syria_oil_page_hero",
+              "settings": {
+                "title": "اتصل بنا",
+                "subtitle": "خريطة، بيانات التواصل، ونموذج استفسار.",
+                "show_breadcrumb": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c7a9526",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "2f304c9",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "af8c56c",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"contact-layout\">\n  <aside class=\"contact-details\">\n    <h3>بيانات التواصل</h3>\n    <ul class=\"contact-list\">\n      <li>\n        <span class=\"contact-list__ico\" aria-hidden=\"true\">⌖</span>\n        <div><strong>العنوان</strong><span>دمشق — ساحة الروضة</span></div>\n      </li>\n      <li>\n        <span class=\"contact-list__ico\" aria-hidden=\"true\">☎</span>\n        <div><strong>الهاتف</strong><a href=\"tel:+963110000000\">+963 11 0000000</a></div>\n      </li>\n      <li>\n        <span class=\"contact-list__ico\" aria-hidden=\"true\">✉</span>\n        <div><strong>البريد</strong><a href=\"mailto:info@syria-oil.com\">info@syria-oil.com</a></div>\n      </li>\n      <li>\n        <span class=\"contact-list__ico\" aria-hidden=\"true\">◷</span>\n        <div><strong>ساعات العمل</strong><span>الأحد–الخميس 8:30–15:30</span></div>\n      </li>\n    </ul>\n  </aside>\n  <div class=\"contact-map\">\n    <iframe title=\"خريطة دمشق — ساحة الروضة\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.openstreetmap.org/export/embed.html?bbox=36.275%2C33.505%2C36.325%2C33.535&amp;layer=mapnik&amp;marker=33.52%2C36.30\"></iframe>\n  </div>\n</div>\n<form class=\"contact-form card\" action=\"#\" method=\"post\">\n  <div class=\"card-body\">\n    <h3>نموذج استفسار</h3>\n    <div class=\"contact-form__grid\">\n      <div class=\"form-group\"><label class=\"form-label\" for=\"c-name\">الاسم</label><input id=\"c-name\" class=\"form-control\" name=\"name\" required /></div>\n      <div class=\"form-group\"><label class=\"form-label\" for=\"c-email\">البريد</label><input id=\"c-email\" type=\"email\" class=\"form-control\" name=\"email\" required /></div>\n      <div class=\"form-group\"><label class=\"form-label\" for=\"c-org\">الجهة</label><input id=\"c-org\" class=\"form-control\" name=\"org\" /></div>\n      <div class=\"form-group\"><label class=\"form-label\" for=\"c-subject\">الموضوع</label>\n        <select id=\"c-subject\" class=\"form-select\" name=\"subject\">\n          <option>استفسار عام</option>\n          <option>خدمة</option>\n          <option>استثمار</option>\n          <option>شكوى</option>\n        </select>\n      </div>\n      <div class=\"form-group contact-form__full\"><label class=\"form-label\" for=\"c-msg\">الرسالة</label><textarea id=\"c-msg\" class=\"form-textarea\" name=\"message\" rows=\"5\" required></textarea></div>\n    </div>\n    <button class=\"btn btn-primary\" type=\"submit\">إرسال</button>\n  </div>\n</form>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e16d261",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "4dbef9b",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "966f10d",
+              "elType": "widget",
+              "widgetType": "syria_oil_newsletter_cta",
+              "settings": {
+                "mode": "form",
+                "title": "النشرة البريدية"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

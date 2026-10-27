@@ -1,0 +1,642 @@
+/**
+ * Shared portal section widgets.
+ * Visual model: ministry-portal (light surfaces, soft bands, mobile stacks).
+ */
+
+/* —— Page hero —— */
+.sow-page-hero {
+  position: relative;
+  padding: clamp(2rem, 5vw, 3rem) 0;
+  background: linear-gradient(135deg, var(--color-primary, #007a3d), var(--color-primary-dark, #004d27));
+  color: #fff;
+  overflow: hidden;
+}
+.sow-page-hero__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25;
+}
+.sow-page-hero .container { position: relative; z-index: 1; }
+.sow-page-hero h1 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+  font-family: var(--font-display);
+}
+.sow-page-hero .breadcrumb,
+.sow-page-hero .breadcrumb a,
+.sow-page-hero .breadcrumb .sep,
+.sow-page-hero .breadcrumb [aria-current="page"] {
+  color: rgba(255, 255, 255, 0.92);
+}
+.sow-page-hero .breadcrumb a:hover {
+  color: #fff;
+}
+.sow-page-hero .breadcrumb [aria-current="page"] {
+  font-weight: 600;
+  color: #fff;
+}
+.sow-page-hero .lede {
+  margin: 0.75rem 0 0;
+  opacity: 0.9;
+  max-width: 40rem;
+  line-height: 1.7;
+}
+
+/* —— Overview cards —— */
+.sow-overview {
+  display: grid;
+  gap: 0.75rem;
+  /* Mobile default: 2×2 so feature pairs sit side-by-side */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.sow-overview-card {
+  background: #fff;
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 14px;
+  padding: 1.35rem 1.25rem;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 0;
+}
+.sow-overview-card:hover {
+  box-shadow: 0 10px 28px rgba(15, 20, 25, 0.08);
+  border-color: var(--color-border-hover, #c5dccf);
+  transform: translateY(-2px);
+}
+.sow-overview-card .icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary-soft, #e6f5ec);
+  color: var(--color-primary, #007a3d);
+  font-weight: 800;
+  margin-bottom: 0.85rem;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.sow-overview-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  color: var(--color-ink, #0f1419);
+  font-family: var(--font-display);
+  line-height: 1.35;
+}
+.sow-overview-card p,
+.sow-overview-card__text {
+  margin: 0;
+  color: var(--color-muted, #64748b);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+/* —— Stats —— */
+.sow-stats {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.sow-stat-card {
+  text-align: center;
+  padding: 1.35rem 1rem 1.55rem;
+  background: #fff;
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgba(15, 20, 25, 0.04);
+  overflow: hidden;
+}
+.sow-stat-card .value {
+  font-size: clamp(1.45rem, 3vw, 1.85rem);
+  font-weight: 800;
+  color: var(--color-primary, #007a3d);
+  font-family: var(--font-display);
+  line-height: 1.15;
+}
+.sow-stat-card .label {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--color-muted, #64748b);
+  font-weight: 600;
+}
+
+/* —— Service tiles —— */
+.sow-service-tiles {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+.sow-service-tile {
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+  padding: 1.05rem 1.15rem;
+  background: #fff;
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.sow-service-tile:hover {
+  border-color: var(--color-primary, #007a3d);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(15, 20, 25, 0.07);
+}
+.sow-service-tile .icon {
+  flex: 0 0 auto;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 10px;
+  background: var(--color-primary-soft, #e6f5ec);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--color-primary, #007a3d);
+}
+.sow-service-tile h3 { margin: 0 0 0.25rem; font-size: 0.95rem; }
+.sow-service-tile p { margin: 0; font-size: 0.8rem; color: var(--color-muted, #64748b); line-height: 1.55; }
+
+/* —— Category flow —— */
+.sow-cat-flow{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.55rem;
+  justify-content:flex-start;
+}
+.sow-cat-flow a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--color-border, #e2e8f0);
+  text-decoration: none;
+  color: var(--color-ink, #0f1419);
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.sow-cat-flow a:hover {
+  border-color: var(--color-primary, #007a3d);
+  color: var(--color-primary, #007a3d);
+}
+.sow-cat-flow small { opacity: 0.65; font-weight: 500; }
+
+/* —— Minister —— */
+.sow-minister {
+  display: grid;
+  gap: 0;
+  align-items: stretch;
+  position: relative;
+  background:
+    radial-gradient(ellipse 90% 70% at 100% 0%, color-mix(in srgb, var(--color-primary, #007a3d) 14%, transparent), transparent 58%),
+    radial-gradient(ellipse 70% 55% at 0% 100%, color-mix(in srgb, var(--color-ink, #0f1419) 7%, transparent), transparent 55%),
+    linear-gradient(145deg, #f3f7f5 0%, #e9f0ec 45%, #f7faf8 100%);
+  border: 1px solid color-mix(in srgb, var(--color-primary, #007a3d) 16%, var(--color-border, #e2e8f0));
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 14px 36px rgba(15, 20, 25, 0.07);
+}
+.sow-minister::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(105deg, transparent 42%, color-mix(in srgb, #fff 35%, transparent) 58%, transparent 72%);
+  opacity: 0.55;
+  z-index: 0;
+}
+.sow-minister__media {
+  margin: 0;
+  min-height: 240px;
+  position: relative;
+  z-index: 1;
+  background:
+    linear-gradient(180deg, transparent 45%, rgba(0, 77, 39, 0.45)),
+    linear-gradient(145deg, #e8f2ec 0%, #cfe0d6 55%, #b8d0c4 100%);
+}
+.sow-minister__media--fallback::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 40% 30%, rgba(0, 122, 61, 0.18), transparent 55%),
+    radial-gradient(circle at 70% 70%, rgba(15, 20, 25, 0.06), transparent 40%);
+  pointer-events: none;
+}
+.sow-minister__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  min-height: 240px;
+}
+.sow-minister__body {
+  position: relative;
+  z-index: 1;
+  padding: clamp(1.35rem, 3.2vw, 2.35rem) clamp(1.35rem, 3.2vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+  background: color-mix(in srgb, #fff 42%, transparent);
+  backdrop-filter: blur(6px);
+}
+.sow-minister__body .eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-primary, #007a3d);
+  font-weight: 700;
+}
+.sow-minister__body h2 {
+  margin: 0.15rem 0 0.5rem;
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  line-height: 1.45;
+  color: var(--color-ink, #0f1419);
+  font-family: var(--font-display);
+}
+.sow-minister__body .quote {
+  margin: 0 0 1rem;
+  color: var(--color-muted, #64748b);
+  line-height: 1.75;
+  font-size: 0.98rem;
+}
+
+/* —— Ad banners —— */
+.sow-ad-banner {
+  display: block;
+  border-radius: 0;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  min-height: 160px;
+  box-shadow: none;
+  transition: opacity 0.2s ease;
+}
+.sow-ad-banner:hover {
+  opacity: 0.96;
+}
+.sow-ad-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  min-height: 160px;
+}
+.sow-ad-banner__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(1.15rem, 3vw, 1.75rem);
+  background: linear-gradient(105deg, rgba(15, 20, 25, 0.88), rgba(15, 20, 25, 0.35));
+}
+.sow-ad-banner h3 { margin: 0 0 0.35rem; color: #fff; font-size: 1.15rem; }
+.sow-ad-banner p { margin: 0; opacity: 0.92; font-size: 0.9rem; line-height: 1.55; max-width: 36rem; }
+.sow-ad-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+.sow-ad-single { display: grid; gap: 1rem; }
+
+/* —— Projects —— */
+.sow-projects {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+.sow-project-card {
+  background: #fff;
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.sow-project-card:hover {
+  box-shadow: 0 10px 28px rgba(15, 20, 25, 0.08);
+  transform: translateY(-2px);
+}
+.sow-project-card img {
+  width: 100%;
+  aspect-ratio: var(--card-media-ratio, 16 / 9);
+  object-fit: cover;
+  display: block;
+  background: linear-gradient(145deg, #e6f5ec, #eef2f6);
+}
+.sow-project-card__body { padding: 1rem 1.15rem 1.25rem; }
+.sow-project-card h3 { margin: 0 0 0.5rem; font-size: 1.05rem; }
+.sow-project-card .meta {
+  font-size: 0.8rem;
+  color: var(--color-muted, #64748b);
+  margin-bottom: 0.5rem;
+}
+.sow-progress {
+  height: 6px;
+  background: #eef2f6;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 0.75rem;
+}
+.sow-progress > span {
+  display: block;
+  height: 100%;
+  background: var(--color-primary, #007a3d);
+  border-radius: 999px;
+}
+
+/* —— Partners —— */
+.sow-partners {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.sow-partners a,
+.sow-partners span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.1rem;
+  background: #fff;
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 12px;
+  min-height: 72px;
+  min-width: 120px;
+}
+.sow-partners img {
+  max-height: 42px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.85;
+  transition: filter 0.2s ease, opacity 0.2s ease;
+}
+.sow-partners a:hover img {
+  filter: none;
+  opacity: 1;
+}
+
+/* —— Contact CTA —— */
+.sow-contact-cta {
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1.15rem, 3vw, 1.65rem) 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  grid-template-columns: 1fr;
+}
+.sow-contact-cta__item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+.sow-contact-cta__item .icon {
+  flex: 0 0 auto;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 999px;
+  background: var(--color-primary-soft, #e6f5ec);
+  color: var(--color-primary, #007a3d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.sow-contact-cta__item a {
+  color: inherit;
+  text-decoration: none;
+}
+.sow-contact-cta__item a:hover {
+  color: var(--color-primary, #007a3d);
+}
+
+/* —— Section bands (Elementor home stack) ——
+ * Keep transparent so sections are not double-boxed against the page bg.
+ * Interactive cards keep their own surfaces; section wrappers stay flush. */
+.elementor-widget-syria_oil_overview_cards,
+.elementor-widget-syria_oil_stats_cards,
+.elementor-widget-syria_oil_article_card_grid,
+.elementor-widget-syria_oil_spotlight_rail,
+.elementor-widget-syria_oil_minister_block,
+.elementor-widget-syria_oil_ad_banner,
+.elementor-widget-syria_oil_newsletter_cta {
+  --so-section-gap: clamp(0.5rem, 2vw, 1rem);
+}
+
+.elementor-section:has(.elementor-widget-syria_oil_overview_cards),
+.elementor-section:has(.elementor-widget-syria_oil_stats_cards),
+.elementor-section:has(.elementor-widget-syria_oil_article_card_grid),
+.elementor-section:has(.elementor-widget-syria_oil_spotlight_rail),
+.elementor-section:has(.elementor-widget-syria_oil_ad_banner),
+.elementor-section:has(.elementor-widget-syria_oil_service_tiles),
+.elementor-section:has(.elementor-widget-syria_oil_project_cards),
+.elementor-section:has(.elementor-widget-syria_oil_newsletter_cta) {
+  background: transparent;
+}
+
+/* Soft band behind the leadership block */
+.elementor-section:has(.elementor-widget-syria_oil_minister_block) {
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--color-primary, #007a3d) 6%, #fff) 0%,
+      color-mix(in srgb, var(--color-primary, #007a3d) 3%, #f7f9fb) 48%,
+      #fff 100%
+    );
+  padding-block: clamp(1.25rem, 2.8vw, 2.25rem);
+}
+
+/* —— Tablet+ —— */
+@media (min-width: 768px) {
+  .sow-overview {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+  .sow-stats {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .sow-service-tiles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .sow-minister {
+    grid-template-columns: minmax(220px, 0.9fr) 1.2fr;
+  }
+  .sow-minister__media,
+  .sow-minister__media img {
+    min-height: 100%;
+    height: 100%;
+  }
+  .sow-ad-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .sow-projects {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .sow-contact-cta {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .sow-overview {
+    grid-template-columns: repeat(var(--sow-cols, 4), minmax(0, 1fr));
+  }
+  .sow-service-tiles {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .sow-projects {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .sow-stats {
+    grid-template-columns: repeat(var(--sow-stats-cols, 4), minmax(0, 1fr));
+  }
+}
+
+/* —— Phones —— */
+@media (max-width: 767px) {
+  .sow-overview {
+    /* Beat Elementor inline column=1 from older page JSON */
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0.65rem;
+  }
+  .sow-overview-card {
+    padding: 0.85rem 0.75rem;
+  }
+  .sow-overview-card .icon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9px;
+    margin-bottom: 0.55rem;
+    font-size: 0.85rem;
+  }
+  .sow-overview-card h3 {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  /* Drop subtitles on small phones — titles stay readable in 2 cols */
+  .sow-overview-card p,
+  .sow-overview-card__text {
+    display: none;
+  }
+  .sow-minister__body {
+    text-align: center;
+  }
+  .sow-minister__body .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .sow-minister__media,
+  .sow-minister__media img {
+    min-height: 200px;
+    max-height: 240px;
+  }
+  .sow-ad-banner {
+    min-height: 0;
+  }
+  .sow-ad-banner img {
+    min-height: 140px;
+  }
+  .sow-ad-banner__overlay {
+    padding: 1.1rem;
+  }
+  .sow-stat-card {
+    padding: 1.1rem 0.75rem;
+  }
+  /* Partners stay one horizontal row on phones (scroll), not a wrapped grid */
+  .sow-partners {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 0.65rem;
+    scrollbar-width: thin;
+    scrollbar-color: color-mix(in srgb, var(--color-depth, #321010) 38%, #cbd5e1) transparent;
+    padding-bottom: 0.35rem;
+  }
+
+  .sow-partners::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  .sow-partners::-webkit-scrollbar-track {
+    background: color-mix(in srgb, var(--color-depth, #321010) 6%, #eef2f6);
+    border-radius: 999px;
+  }
+
+  .sow-partners::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--color-depth, #321010) 42%, #94a3b8);
+    border-radius: 999px;
+  }
+  .sow-partners a,
+  .sow-partners span {
+    flex: 0 0 auto;
+    min-width: 110px;
+    scroll-snap-align: start;
+  }
+}
+
+@media (max-width: 480px) {
+  .sow-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.65rem;
+  }
+  .sow-stat-card .value {
+    font-size: 1.35rem;
+  }
+  .sow-stat-card .label {
+    font-size: 0.75rem;
+  }
+}
+
+/* Light surfaces for portal HTML inside Elementor text editors */
+.elementor-widget-text-editor .contact-details,
+.elementor-widget-text-editor .contact-form,
+.elementor-widget-text-editor .about-panel,
+.elementor-widget-text-editor .overview-card,
+.elementor-widget-text-editor .media-item,
+.elementor-widget-text-editor .media-actions .card,
+.elementor-widget-text-editor .sitemap-col {
+  color: var(--color-ink, #0f1419);
+}
+.elementor-widget-text-editor .contact-details,
+.elementor-widget-text-editor .contact-form,
+.elementor-widget-text-editor .about-panel,
+.elementor-widget-text-editor .overview-card {
+  background: #fff;
+  border-color: var(--color-border, #e2e8f0);
+}
+.elementor-widget-text-editor .contact-form .form-control,
+.elementor-widget-text-editor .contact-form .form-select,
+.elementor-widget-text-editor .contact-form .form-textarea {
+  background: #fff;
+  color: var(--color-ink, #0f1419);
+  border: 1px solid var(--color-border, #e2e8f0);
+}

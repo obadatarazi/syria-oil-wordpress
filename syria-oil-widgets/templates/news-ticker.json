@@ -1,0 +1,17 @@
+{
+  "version": "0.4",
+  "title": "Syria Oil — News Ticker",
+  "type": "widget",
+  "content": [
+    {
+      "id": "sowPresetTicker",
+      "elType": "widget",
+      "widgetType": "syria_oil_news_ticker",
+      "settings": {
+        "source": "query",
+        "label": "آخر الأخبار",
+        "query_posts_per_page": 6
+      }
+    }
+  ]
+}

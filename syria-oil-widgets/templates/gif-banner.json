@@ -1,0 +1,22 @@
+{
+  "version": "0.4",
+  "title": "Syria Oil — GIF Banner",
+  "type": "widget",
+  "content": [
+    {
+      "id": "preset",
+      "elType": "widget",
+      "widgetType": "syria_oil_gif_banner",
+      "settings": {
+        "source": "url",
+        "gif_url": {
+          "url": "https://www.syria-oil.com/wp-content/uploads/image/free-limousine-service-from-and-to-UAE-airports-by-fly-cham-1.gif"
+        },
+        "alt": "خدمة الليموزين المجانية — Fly Cham",
+        "align": "center",
+        "full_bleed_mobile": "yes",
+        "width": { "unit": "%", "size": 100 }
+      }
+    }
+  ]
+}

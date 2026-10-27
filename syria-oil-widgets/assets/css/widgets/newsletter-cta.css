@@ -1,0 +1,72 @@
+.sow-newsletter {
+  /* Defaults from theme tokens; Elementor Style controls may override. */
+  --sow-nl-from: var(--color-primary-dark, #004d27);
+  --sow-nl-to: var(--color-primary, #007a3d);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--sow-nl-from), var(--sow-nl-to));
+  color: var(--color-on-primary, #fff);
+}
+.sow-newsletter__copy {
+  flex: 1 1 240px;
+}
+.sow-newsletter__copy h2 {
+  margin: 0 0 0.5rem;
+  color: inherit;
+}
+.sow-newsletter__copy p {
+  margin: 0;
+  opacity: 0.85;
+}
+.sow-newsletter__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+.sow-newsletter .btn-accent {
+  background: var(--color-accent, #ce1126);
+  color: var(--color-on-primary, #fff);
+  border: 0;
+  padding: 0.65rem 1.1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.sow-newsletter .btn-ghost {
+  background: transparent;
+  color: var(--color-on-primary, #fff);
+  border: 1px solid var(--color-on-primary-border, rgba(255, 255, 255, 0.45));
+  padding: 0.65rem 1.1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.sow-newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.sow-newsletter-form input[type="email"] {
+  min-width: 200px;
+  padding: 0.65rem 0.85rem;
+  border-radius: 8px;
+  border: 0;
+}
+.sow-newsletter-form .sow-hp {
+  position: absolute;
+  inset-inline-start: -9999px;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+@media (max-width: 640px) {
+  .sow-newsletter {
+    padding: 1.25rem;
+  }
+}

@@ -1,0 +1,163 @@
+/* Category Sections — layout shells (cards live in news-card.css) */
+
+.sow-cat-sections {
+  display: flex;
+  flex-direction: column;
+  gap: var(--so-sec-gap, var(--space-6, 1.5rem));
+  text-align: center;
+}
+
+.sow-cat-sec {
+  padding-block: var(--space-4, 1rem);
+}
+
+.sow-cat-sec--rhythm-alt {
+  padding: var(--space-5, 1.25rem);
+  border-radius: var(--radius-lg, 16px);
+  background: var(--color-surface-tint, #f7f9fb);
+  border: 1px solid var(--color-surface-tint-border, #e8edf2);
+}
+
+.sow-cat-sec__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--space-3, 0.75rem);
+  margin-bottom: var(--so-card-gap, var(--space-4, 1rem));
+}
+
+.sow-cat-sec__icon {
+  display: none !important;
+}
+
+.sow-cat-sec__titles {
+  width: 100%;
+  max-width: 40rem;
+  margin-inline: auto;
+}
+
+.sow-cat-sec__heading,
+.sow-cat-sec__titles h2,
+.sow-cat-sec__titles h3 {
+  margin: 0;
+  font-family: var(--font-display, inherit);
+  font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+  color: var(--color-ink, #0f1419);
+}
+
+.sow-cat-sec__titles p {
+  margin: var(--space-2, 0.5rem) 0 0;
+  color: var(--color-muted, #64748b);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.sow-cat-sec__more {
+  margin-top: var(--space-2, 0.5rem);
+}
+
+/* —— Grid (2 columns) —— */
+.sow-cat-sec--layout-grid .sow-cat-sec__grid,
+.sow-cat-sec__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--so-card-gap, var(--space-4, 1rem));
+  text-align: start;
+  align-items: stretch;
+}
+
+/* —— List rows —— */
+.sow-cat-sec__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--so-card-gap, var(--space-4, 1rem));
+  text-align: start;
+}
+
+/* —— Magazine —— */
+.sow-cat-sec__magazine {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: var(--so-card-gap, var(--space-4, 1rem));
+  text-align: start;
+  align-items: stretch;
+}
+
+.sow-cat-sec__magazine-side {
+  display: flex;
+  flex-direction: column;
+  gap: var(--so-card-gap, var(--space-4, 1rem));
+}
+
+/* —— Rail slider shell —— */
+.sow-cat-rail-slider {
+  position: relative;
+  padding-inline: 2.75rem;
+  text-align: start;
+}
+
+.sow-cat-sec__rail {
+  display: flex;
+  gap: var(--so-card-gap, var(--space-4, 1rem));
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-block: var(--space-1, 0.25rem);
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.sow-cat-sec__rail::-webkit-scrollbar {
+  display: none;
+}
+
+/* —— Video / gallery grids —— */
+.sow-cat-sec--layout-video .sow-cat-sec__grid,
+.sow-cat-sec--layout-gallery .sow-cat-sec__grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 991px) {
+  .sow-cat-sec--layout-video .sow-cat-sec__grid,
+  .sow-cat-sec--layout-gallery .sow-cat-sec__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sow-cat-sec__magazine {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .sow-cat-sec--layout-grid .sow-cat-sec__grid:not(.so-news-card-slider__track),
+  .sow-cat-sec__grid:not(.so-news-card-slider__track),
+  .sow-cat-sec--layout-video .sow-cat-sec__grid:not(.so-news-card-slider__track),
+  .sow-cat-sec--layout-gallery .sow-cat-sec__grid:not(.so-news-card-slider__track) {
+    grid-template-columns: 1fr;
+  }
+
+  .sow-cat-rail-slider,
+  .so-news-card-slider:not(.so-news-card-slider--responsive) {
+    padding-inline: 2.5rem;
+  }
+
+  .so-news-card-slider__arrow,
+  .sow-cat-rail-slider__arrow {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .sow-cat-sec__more {
+    width: 100%;
+    max-width: 16rem;
+    justify-content: center;
+  }
+}
+
+/* Responsive grid→slider breakpoint is set per widget in Elementor (Mobile slider). */

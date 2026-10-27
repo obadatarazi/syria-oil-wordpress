@@ -1,0 +1,77 @@
+{
+  "version": "0.4",
+  "title": "المقالات",
+  "type": "page",
+  "content": [
+    {
+      "id": "88ad2af",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "58d505d",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "4c893bd",
+              "elType": "widget",
+              "widgetType": "syria_oil_page_hero",
+              "settings": {
+                "title": "المقالات",
+                "subtitle": "مقالات وتحليلات قطاعية مع تصفية سريعة حسب التصنيف.",
+                "show_breadcrumb": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1f1lter",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "extended",
+        "padding": {
+          "unit": "px",
+          "top": "36",
+          "right": "0",
+          "bottom": "24",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "f1ltercol",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "postsfilt",
+              "elType": "widget",
+              "widgetType": "syria_oil_posts_filter",
+              "settings": {
+                "heading": "المقالات حسب التصنيف",
+                "show_featured": "yes",
+                "featured_count": 4,
+                "show_chips": "yes",
+                "chip_limit": 16,
+                "posts_per_page": 9
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

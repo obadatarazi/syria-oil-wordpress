@@ -1,0 +1,64 @@
+{
+  "version": "0.4",
+  "title": "خريطة الموقع",
+  "type": "page",
+  "content": [
+    {
+      "id": "smhero1",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "smhero2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "smhero3",
+              "elType": "widget",
+              "widgetType": "syria_oil_page_hero",
+              "settings": {
+                "title": "خريطة الموقع",
+                "subtitle": "دليل سريع لأهم صفحات البوابة.",
+                "show_breadcrumb": "yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "smbody1",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "default"
+      },
+      "elements": [
+        {
+          "id": "smbody2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "smbody3",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"sitemap-grid\">\n  <div class=\"sitemap-col\">\n    <h3>الموقع</h3>\n    <ul>\n      <li><a href=\"/\">الرئيسية</a></li>\n      <li><a href=\"/about/\">عن الموقع</a></li>\n      <li><a href=\"/faq/\">الأسئلة الشائعة</a></li>\n      <li><a href=\"/sitemap/\">خريطة الموقع</a></li>\n    </ul>\n  </div>\n  <div class=\"sitemap-col\">\n    <h3>الأخبار والمقالات</h3>\n    <ul>\n      <li><a href=\"/news/\">الأخبار</a></li>\n      <li><a href=\"/articles/\">المقالات</a></li>\n      <li><a href=\"/media/\">المركز الإعلامي</a></li>\n      <li><a href=\"/downloads/\">التقارير</a></li>\n    </ul>\n  </div>\n  <div class=\"sitemap-col\">\n    <h3>الخدمات والمشاريع</h3>\n    <ul>\n      <li><a href=\"/services/\">الأقسام</a></li>\n      <li><a href=\"/projects/\">المشاريع</a></li>\n      <li><a href=\"/tenders/\">المناقصات</a></li>\n      <li><a href=\"/investments/\">الاستثمارات</a></li>\n    </ul>\n  </div>\n  <div class=\"sitemap-col\">\n    <h3>تواصل</h3>\n    <ul>\n      <li><a href=\"/contact/\">اتصل بنا</a></li>\n      <li><a href=\"mailto:info@syria-oil.com\">info@syria-oil.com</a></li>\n    </ul>\n  </div>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

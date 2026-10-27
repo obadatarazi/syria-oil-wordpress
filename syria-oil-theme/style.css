@@ -1,0 +1,97 @@
+/*
+Theme Name: Syria Oil
+Theme URI: https://www.linkedin.com/in/obada-tarazi
+Author: Obada Al Tarazi
+Author URI: https://www.linkedin.com/in/obada-tarazi
+Description: Arabic-first, mobile-first WordPress theme for the Syrian oil & gas news portal. Built for Elementor and Elementor Pro Theme Builder, with custom widgets, RTL support, and one-click demo import.
+Version: 1.17.9
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: syria-oil
+Tags: news, rtl-language-support, custom-menu, featured-images, translation-ready, elementor
+*/
+
+/*
+ * NOTE: This file is intentionally minimal. The full design system is loaded
+ * via wp_enqueue_style() from assets/css/ (tokens.css, theme.css, mobile.css).
+ * This block only holds the required WordPress theme header + a base reset so
+ * the theme is functional even before the enqueued stylesheets load.
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+svg,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* WordPress core alignment + accessibility helpers */
+.alignwide {
+  max-width: 1320px;
+}
+
+.alignfull {
+  max-width: 100%;
+  width: 100%;
+}
+
+.aligncenter {
+  margin-inline: auto;
+}
+
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  display: block;
+  top: 5px;
+  inset-inline-start: 5px;
+  width: auto;
+  height: auto;
+  padding: 15px 23px 14px;
+  background: #fff;
+  z-index: 100000;
+  clip: auto;
+}

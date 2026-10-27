@@ -1,0 +1,31 @@
+{
+  "title": "Syria Oil Kit",
+  "type": "kit",
+  "version": "0.0",
+  "settings": {
+    "system_colors": [
+      { "_id": "primary", "title": "Primary", "color": "#007a3d" },
+      { "_id": "secondary", "title": "Secondary", "color": "#f7f9fb" },
+      { "_id": "text", "title": "Text", "color": "#0f1419" },
+      { "_id": "accent", "title": "Accent", "color": "#ce1126" }
+    ],
+    "system_typography": [
+      {
+        "_id": "primary",
+        "title": "Primary (Display)",
+        "typography_typography": "custom",
+        "typography_font_family": "Noto Kufi Arabic",
+        "typography_font_weight": "700"
+      },
+      {
+        "_id": "secondary",
+        "title": "Secondary (Body)",
+        "typography_typography": "custom",
+        "typography_font_family": "IBM Plex Sans Arabic",
+        "typography_font_weight": "400"
+      }
+    ]
+  },
+  "content": [],
+  "page_settings": []
+}
